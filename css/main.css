@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @font-face {
   font-family: 'Proxima Nova Regular';
   src: url("../fonts/ProximaNova-Regular.eot");
@@ -102,6 +101,11 @@ a {
   color: white;
 }
 
+.main {
+  /* Placeholder
+-----------------------------------------------------*/
+}
+
 .main h1 {
   margin-top: 138px;
   font-size: 60px;
@@ -112,36 +116,58 @@ a {
   color: #10A578;
 }
 
-.main .search {
-  width: 300px;
-  /* Ширина поля с кнопкой */
-  border: 1px solid #000;
-  /* Параметры рамки */
-  min-height: 20px;
-  /* Минимальная высота */
-}
-
-.main input[type="search"] {
-  border: none;
-  /* Убираем рамку */
-  outline: none;
-  /* Убираем свечение в Chrome и Safari */
+.main form.catalin input {
+  float: left;
+  border: 1px solid #e7e8f4;
+  height: 70px;
+  width: 600px;
+  margin: 0;
   -webkit-appearance: none;
-  /* Убираем рамку в Chrome и Safari */
-  width: 274px;
-  /* Ширина поля */
-  vertical-align: middle;
-  /* Выравнивание по середине */
+  outline: none;
+  border-radius: 6px 0 0 6px;
 }
 
-.main input[type="submit"] {
-  width: 20px;
-  /* Ширина кнопки */
-  height: 20px;
-  /* Высота кнопки */
+.main form.catalin button {
+  float: left;
   border: none;
-  /* Убираем рамку */
-  background: url(images/video.png) no-repeat 50% 50%;
-  /* Параметры фона */
+  background-color: #10A578;
+  border-radius: 0 6px 6px 0;
+  border: 1px solid #e7e8f4;
+  border-right: none;
+  padding: 0;
+  margin: 0;
+  width: 174px;
+  height: 70px;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  font-family: "Proxima Nova Semibold", sans-serif;
+  font-size: 20px;
+}
+
+.main form.catalin input::-webkit-input-placeholder {
+  color: #8c8da4;
+  font-family: "Proxima Nova Regular", sans-serif;
+  font-size: 18px;
+  padding: 24px;
+}
+
+.main input[type="text"] {
+  padding: 24px;
+}
+
+.main form.catalin input:-moz-placeholder {
+  color: #8c8da4;
+  font-family: "Proxima Nova Regular", sans-serif;
+  font-size: 18px;
+  padding: 24px;
+}
+
+.main form.catalin input:-ms-input-placeholder {
+  color: #8c8da4;
+  font-family: "Proxima Nova Regular", sans-serif;
+  font-size: 18px;
+  padding: 24px;
 }
 /*# sourceMappingURL=main.css.map */

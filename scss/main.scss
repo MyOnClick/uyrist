@@ -110,9 +110,62 @@ a {
 	margin-top: 138px;
 	font-size: 60px;
 	font-family: $bold;
-	// max-width: 798px;
 	span {
 		color:$grin;
 	}
 }
+
+  form.catalin input{
+    float: left;
+    border: 1px solid $gray-light;
+    height: 70px;
+    width:600px;
+    margin: 0;
+    -webkit-appearance: none;
+    outline: none;
+    border-radius: 6px 0 0 6px;
+  }
+  form.catalin button{
+    float: left;
+    border: none;
+		background-color: $grin;
+		border-radius:0 6px 6px 0;
+		border: 1px solid $gray-light;
+		border-right:none;
+    padding: 0;
+    margin: 0;
+    width: 174px;
+    height:70px;
+    cursor: pointer;
+    text-transform: uppercase;
+		text-align: center;
+		color:white;
+		font-family: $medium;
+		font-size: 20px;
+  }
+
+/* Placeholder
+-----------------------------------------------------*/
+  form.catalin input::-webkit-input-placeholder {
+     color: $gray;
+		font-family: $regular;
+		font-size: 18px;
+		padding: 24px;
+	}
+	input[type="text"]{padding: 24px;}
+   
+  form.catalin input:-moz-placeholder {
+     color: $gray;
+		font-family: $regular;
+		font-size: 18px;
+		padding: 24px;
+  }
+   
+  form.catalin input:-ms-input-placeholder {
+     color: $gray;
+		font-family: $regular;
+		font-size: 18px;
+		padding: 24px;
+  }
+
 }
