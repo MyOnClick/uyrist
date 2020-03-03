@@ -1,6 +1,118 @@
+@font-face {
+font-family: 'Proxima Nova Regular';
+src: url('../fonts/ProximaNova-Regular.eot');
+src: url('../fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+url('../fonts/ProximaNova-Regular.woff') format('woff'),
+url('../fonts/ProximaNova-Regular.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'Proxima Nova Semibold';
+src: url('../fonts/ProximaNova-Semibold.eot');
+src: url('../fonts/ProximaNova-Semibold.eot?#iefix') format('embedded-opentype'),
+url('../fonts/ProximaNova-Semibold.woff') format('woff'),
+url('../fonts/ProximaNova-Semibold.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'Proxima Nova Bold';
+src: url('../fonts/ProximaNova-Bold.eot');
+src: url('../fonts/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+url('../fonts/ProximaNova-Bold.woff') format('woff'),
+url('../fonts/ProximaNova-Bold.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+$grin:#10A578;
+$black:#161737;
+$gray:#8c8da4;
+$gray-light:#e7e8f4;
+$regular: 'Proxima Nova Regular',
+sans-serif;
+$medium:'Proxima Nova Semibold',
+sans-serif;
+$bold:'Proxima Nova Bold',
+sans-serif;
 * {
 	box-sizing: border-box;
+	  outline: 0;
 }
-.container {
-	background-color: gray;
+a {
+	text-decoration: none; 	
+}
+// Навигация
+.col,.col-1,.col-2,.col-3, .btn {
+	padding: 0;
+	margin: 0;
+}
+.navigation {
+background-color: $grin;
+height: 70px;
+font-size: 16px;
+font-family: $medium;
+&_logo {
+	width: 111px;
+	height: 31px;
+	padding-top: 21px;
+} 
+&_city {
+	padding-left: 26px;
+	padding-top: 25px;
+	&_img {
+		padding-left: 8px;
+	}
+}
+&_specialists {
+	padding-left: 65px;
+	padding-top: 25px;
+}
+&_compani,
+&_notaries,
+&_benefit {
+	padding-left: 24px;
+	padding-top: 25px;
+}
+button {
+	border-radius: 4px;
+}
+.btn-1 {
+	padding: 12px 25px;
+	background-color: transparent;
+	border:1px solid #FFFFFF;
+	color:#FFFFFF;
+}
+.btn-2 {
+padding: 12px 14px;
+color:$grin;
+background-color: #ffffff;
+border:none;
+}
+&_circuit {
+	padding-left:25px;
+		margin-top: 13px;
+		
+
+}
+&_fill {
+	padding-left: 10px;
+		margin-top: 13px;
+
+}
+a {
+	color:white;
+}
+}
+// Главная
+.main {
+	h1 {
+	margin-top: 138px;
+	font-size: 60px;
+	font-family: $bold;
+	// max-width: 798px;
+	span {
+		color:$grin;
+	}
+}
 }
