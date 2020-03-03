@@ -106,15 +106,21 @@ a {
 }
 // Главная
 .main {
+	background: url(../image/Main/home.svg) no-repeat ;
+	background-size: 110%;
 	h1 {
 	margin-top: 138px;
+	margin-bottom: 26px;
+	
 	font-size: 60px;
 	font-family: $bold;
 	span {
 		color:$grin;
 	}
 }
-
+form {
+	margin-bottom: 170px;
+}
   form.catalin input{
     float: left;
     border: 1px solid $gray-light;
@@ -131,7 +137,7 @@ a {
 		background-color: $grin;
 		border-radius:0 6px 6px 0;
 		border: 1px solid $gray-light;
-		border-right:none;
+		border-left:none;
     padding: 0;
     margin: 0;
     width: 174px;
@@ -166,6 +172,52 @@ a {
 		font-family: $regular;
 		font-size: 18px;
 		padding: 24px;
-  }
+	}
+}
+.factodes {
 
+&_blocks {
+border: 1px solid $gray-light;
+border-radius:6px;
+transform:translate(0, -80px);
+box-shadow: 0 2px 4px rgba(0, 0, 0, .2);;
+}
+
+&_block {
+	display: flex;
+	align-items: center;
+	padding: 41px 20px;
+	background-color: white;
+	border-left:1px solid $gray-light;
+	&:first-child{border-left: none;}
+
+
+
+}
+
+&_text {
+	display: flex;
+	flex-direction: column;
+	padding-left: 18px;
+}
+&_textt {
+	font-family: $regular;
+	font-size: 20px;
+	color:$black;
+	margin-top: 5px;
+	width: 20px;
+}
+&_fact {
+		font-family: $regular;
+	font-size: 16px;
+		color:$black;
+		border: 1px solid $grin;
+		padding: 10px 14px;
+		border-radius:6px;
+		margin-top: 9px;
+	span {
+		color:$grin;
+		font-family: $bold;
+	}
+}
 }
