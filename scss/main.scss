@@ -47,6 +47,11 @@ a {
 	padding: 0;
 	margin: 0;
 }
+h4 {
+			font-family: $medium;
+		font-size: 42px;
+		color:$black;
+} 
 .navigation {
 background-color: $grin;
 height: 70px;
@@ -180,7 +185,7 @@ form {
 border: 1px solid $gray-light;
 border-radius:6px;
 transform:translate(0, -80px);
-box-shadow: 0 2px 4px rgba(0, 0, 0, .2);;
+box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
 }
 
 &_block {
@@ -220,4 +225,184 @@ box-shadow: 0 2px 4px rgba(0, 0, 0, .2);;
 		font-family: $bold;
 	}
 }
+}
+.special {
+	border-bottom: 1px solid 	$gray-light;
+	padding-bottom: 80px;
+	color:$black;
+	.title {
+		margin:20px 0 40px 0 ;
+	}
+	&_block {
+		width: 270px;
+		border-radius:3px;
+		border-top:3px solid $grin;
+		padding: 29px 0 19px 14px;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, .2);
+		margin: 0 auto;
+	}
+	&_icon {
+		padding-right: 20px;
+	}
+	&_fact{
+		display: flex;
+		justify-content: space-between;
+		padding-top: 20px;
+		padding-bottom: 2px;
+		color:$gray;
+		font-family: $regular;
+		font-size: 20px;
+	}
+	&_text {
+		font-size: 20px;
+		font-family: $medium;
+		line-height: 1;
+		span{
+			font-family: $regular;
+		}
+	}
+
+}
+.services{
+	display: flex;
+	justify-content: space-between;
+	&_block {
+		margin-top: 60px;
+				padding:  20px 20px 20px 0;
+	}
+	.serv {
+				margin-bottom: 36px;
+	}
+	a {
+		font-family:  $regular;
+		font-size: 18px;
+		color: $black;
+		display: block;
+		padding-bottom: 36px;
+
+		span {
+			color:$gray;
+		}
+	}
+}
+.lawyers {
+	.phone_block {
+		left: 70px;
+	}
+	font-family: $regular;
+	color:$black;
+	&_block{
+			border:1px solid $gray-light;
+			padding: 10px;
+			border-radius:6px;
+	}
+	&_img{
+		width: 148px;
+	}
+	.card {
+		display: flex;
+		// justify-content: space-between;
+		align-items: center;
+		border:1px solid $gray-light;
+		border-radius:6px;
+		width: 148px;
+		padding: 12px;
+	font-size: 15px;
+	margin-top: 5px;
+	}
+	&_icon{
+		transform: translateY(0px);
+		padding-right: 20px;
+	}
+	&_start {
+			padding-right: 5px;
+			transform: translateY(-1.5px);
+		}
+		.special {
+			height: 100%;
+			padding: 0;
+		}
+	.stars {
+		display: flex;
+		width: 148px;
+		justify-content: center;
+		margin-top: 10px;
+
+	}
+	&_name {
+		font-size: 25px;
+	}
+	.specialization_block {
+		.icon_img {
+			transform: translateY(2.3px);
+		}
+				.spans {
+			margin-top: 11px;
+			font-size: 14px;
+			display: inline-block;
+			height: 100%;
+			transform: translateY(-50px);
+			span {
+				background-color:#F8F8FE;
+				border-radius:4px;
+				padding: 5px 6px;
+				line-height: 2.3;
+			}
+		}
+		.adress {
+			transform: translateY(-50px);
+		}
+		p {
+			display: inline-block;
+			font-size: 16px;
+		}
+	}
+	&_phone {
+		width: 230px;
+		padding: 18px;
+		font-size: 18px;
+		background: #F8F8FE;
+		border-radius: 6px;
+		letter-spacing: 0.08em;
+.phone_text {
+	font-family: $medium;
+	font-size: 15px;
+	color:$grin;
+	letter-spacing: 0;
+
+}
+	}
+	.WhatsApp {
+		margin-top: 10px;
+		display: flex;
+		font-family: $medium;
+		width: 230px;
+		height: 54px;
+			font-size: 18px;
+			background-color: transparent;
+			border:1px solid $grin;
+			border-radius:6px;
+		color:$grin;
+		&_icon, &_text{
+			padding-left: 10px;
+			padding-right: 30px;
+		}
+	}
+	.consultation {
+		margin-top: 27px;
+		width: 230px;
+		text-align: center;
+		font-size: 15px;
+			.yes {
+		color:$grin;
+		font-family: $medium;
+		font-size: 16px;
+	}
+			.no {
+		color:$gray;
+		font-family: $medium;
+		font-size: 16px;
+	}
+	}
+
 }

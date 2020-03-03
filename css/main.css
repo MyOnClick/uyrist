@@ -37,6 +37,12 @@ a {
   margin: 0;
 }
 
+h4 {
+  font-family: "Proxima Nova Semibold", sans-serif;
+  font-size: 42px;
+  color: #161737;
+}
+
 .navigation {
   background-color: #10A578;
   height: 70px;
@@ -235,5 +241,235 @@ a {
 .factodes_fact span {
   color: #10A578;
   font-family: "Proxima Nova Bold", sans-serif;
+}
+
+.special {
+  border-bottom: 1px solid #e7e8f4;
+  padding-bottom: 80px;
+  color: #161737;
+}
+
+.special .title {
+  margin: 20px 0 40px 0;
+}
+
+.special_block {
+  width: 270px;
+  border-radius: 3px;
+  border-top: 3px solid #10A578;
+  padding: 29px 0 19px 14px;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
+}
+
+.special_icon {
+  padding-right: 20px;
+}
+
+.special_fact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 2px;
+  color: #8c8da4;
+  font-family: "Proxima Nova Regular", sans-serif;
+  font-size: 20px;
+}
+
+.special_text {
+  font-size: 20px;
+  font-family: "Proxima Nova Semibold", sans-serif;
+  line-height: 1;
+}
+
+.special_text span {
+  font-family: "Proxima Nova Regular", sans-serif;
+}
+
+.services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.services_block {
+  margin-top: 60px;
+  padding: 20px 20px 20px 0;
+}
+
+.services .serv {
+  margin-bottom: 36px;
+}
+
+.services a {
+  font-family: "Proxima Nova Regular", sans-serif;
+  font-size: 18px;
+  color: #161737;
+  display: block;
+  padding-bottom: 36px;
+}
+
+.services a span {
+  color: #8c8da4;
+}
+
+.lawyers {
+  font-family: "Proxima Nova Regular", sans-serif;
+  color: #161737;
+}
+
+.lawyers .phone_block {
+  left: 70px;
+}
+
+.lawyers_block {
+  border: 1px solid #e7e8f4;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.lawyers_img {
+  width: 148px;
+}
+
+.lawyers .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #e7e8f4;
+  border-radius: 6px;
+  width: 148px;
+  padding: 12px;
+  font-size: 15px;
+  margin-top: 5px;
+}
+
+.lawyers_icon {
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  padding-right: 20px;
+}
+
+.lawyers_start {
+  padding-right: 5px;
+  -webkit-transform: translateY(-1.5px);
+          transform: translateY(-1.5px);
+}
+
+.lawyers .special {
+  height: 100%;
+  padding: 0;
+}
+
+.lawyers .stars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 148px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 10px;
+}
+
+.lawyers_name {
+  font-size: 25px;
+}
+
+.lawyers .specialization_block .icon_img {
+  -webkit-transform: translateY(2.3px);
+          transform: translateY(2.3px);
+}
+
+.lawyers .specialization_block .spans {
+  margin-top: 11px;
+  font-size: 14px;
+  display: inline-block;
+  height: 100%;
+  -webkit-transform: translateY(-50px);
+          transform: translateY(-50px);
+}
+
+.lawyers .specialization_block .spans span {
+  background-color: #F8F8FE;
+  border-radius: 4px;
+  padding: 5px 6px;
+  line-height: 2.3;
+}
+
+.lawyers .specialization_block .adress {
+  -webkit-transform: translateY(-50px);
+          transform: translateY(-50px);
+}
+
+.lawyers .specialization_block p {
+  display: inline-block;
+  font-size: 16px;
+}
+
+.lawyers_phone {
+  width: 230px;
+  padding: 18px;
+  font-size: 18px;
+  background: #F8F8FE;
+  border-radius: 6px;
+  letter-spacing: 0.08em;
+}
+
+.lawyers_phone .phone_text {
+  font-family: "Proxima Nova Semibold", sans-serif;
+  font-size: 15px;
+  color: #10A578;
+  letter-spacing: 0;
+}
+
+.lawyers .WhatsApp {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Proxima Nova Semibold", sans-serif;
+  width: 230px;
+  height: 54px;
+  font-size: 18px;
+  background-color: transparent;
+  border: 1px solid #10A578;
+  border-radius: 6px;
+  color: #10A578;
+}
+
+.lawyers .WhatsApp_icon, .lawyers .WhatsApp_text {
+  padding-left: 10px;
+  padding-right: 30px;
+}
+
+.lawyers .consultation {
+  margin-top: 27px;
+  width: 230px;
+  text-align: center;
+  font-size: 15px;
+}
+
+.lawyers .consultation .yes {
+  color: #10A578;
+  font-family: "Proxima Nova Semibold", sans-serif;
+  font-size: 16px;
+}
+
+.lawyers .consultation .no {
+  color: #8c8da4;
+  font-family: "Proxima Nova Semibold", sans-serif;
+  font-size: 16px;
 }
 /*# sourceMappingURL=main.css.map */
