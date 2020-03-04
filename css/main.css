@@ -327,13 +327,30 @@ h4 {
 }
 
 .lawyers .phone_block {
-  left: 70px;
+  left: 60px;
+  top: -20px;
+}
+
+.lawyers .lawyers_info {
+  margin-top: 15px;
 }
 
 .lawyers_block {
   border: 1px solid #e7e8f4;
   padding: 10px;
   border-radius: 6px;
+  height: 260px;
+}
+
+.lawyers_block-2 {
+  height: 300px;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.lawyers_block-2 p {
+  margin-top: 10px;
+  margin-bottom: 5px;
 }
 
 .lawyers_img {
@@ -387,9 +404,19 @@ h4 {
   font-size: 25px;
 }
 
-.lawyers .specialization_block .icon_img {
-  -webkit-transform: translateY(2.3px);
-          transform: translateY(2.3px);
+.lawyers .specialization_block .icon_img-1 {
+  -webkit-transform: translateY(6px);
+          transform: translateY(6px);
+}
+
+.lawyers .specialization_block .icon_img-2 {
+  -webkit-transform: translateY(4px);
+          transform: translateY(4px);
+}
+
+.lawyers .specialization_block .icon_img-3 {
+  -webkit-transform: translateY(3.5px);
+          transform: translateY(3.5px);
 }
 
 .lawyers .specialization_block .spans {
@@ -411,6 +438,10 @@ h4 {
 .lawyers .specialization_block .adress {
   -webkit-transform: translateY(-50px);
           transform: translateY(-50px);
+}
+
+.lawyers .specialization_block .adress .time-work {
+  margin-left: 20px;
 }
 
 .lawyers .specialization_block p {
@@ -471,5 +502,130 @@ h4 {
   color: #8c8da4;
   font-family: "Proxima Nova Semibold", sans-serif;
   font-size: 16px;
+}
+
+.lawyers .weekdays {
+  border: 1px solid #10A578;
+  padding: 5px;
+  border-radius: 4px;
+  color: #10A578;
+}
+
+.lawyers .output {
+  color: #e7e8f4;
+  border: 1px solid #e7e8f4;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.lawyer {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #161737;
+}
+
+.lawyer_block {
+  padding-bottom: 20px;
+}
+
+.lawyer_block-photo {
+  margin: 10px;
+}
+
+.lawyer_block .rewyes {
+  margin-top: 5px;
+  display: inline-block;
+  border: 1px solid #e7e8f4;
+  border-radius: 4px;
+  padding: 10px 18px 10px 10px;
+  font-size: 15px;
+  font-family: "Proxima Nova Regular", sans-serif;
+}
+
+.lawyer_block .rewyes_icon {
+  -webkit-transform: translateY(3.5px);
+          transform: translateY(3.5px);
+  padding-right: 20px;
+}
+
+.lawyer_block-ingo {
+  margin-top: 20px;
+}
+
+.lawyer_block-ingo .specialistik {
+  margin-top: 8px;
+}
+
+.lawyer_block-ingo .specialistik a {
+  text-decoration: underline;
+  margin-left: 2px;
+  font-size: 14px;
+  color: black;
+  font-family: "Proxima Nova Regular", sans-serif;
+}
+
+.lawyer_block-ingo .uslugi {
+  margin-top: 12px;
+}
+
+.lawyer_block-ingo .name {
+  font-family: "Proxima Nova Regular", sans-serif;
+  font-size: 25px;
+}
+
+.lawyer_block-ingo .special, .lawyer_block-ingo .time {
+  font-family: "Proxima Nova Regular", sans-serif;
+  font-size: 16px;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.lawyer_block-ingo .time {
+  margin-left: 20px;
+}
+
+.lawyer_block-ingo .week {
+  margin-top: 15px;
+  display: inline-block;
+  margin-left: 50px;
+  font-size: 15px;
+  font-family: "Proxima Nova Semibold", sans-serif;
+}
+
+.lawyer_block-ingo .week .weekdays {
+  border: 1px solid #10A578;
+  padding: 6px;
+  color: #10A578;
+  border-radius: 6px;
+}
+
+.lawyer_block-ingo .week .output {
+  border: 1px solid #e7e8f4;
+  padding: 6px;
+  color: #e7e8f4;
+  border-radius: 6px;
+}
+
+.lawyer_block-ingo .spec {
+  font-family: "Proxima Nova Regular", sans-serif;
+  font-size: 14px;
+  padding: 6px;
+  background-color: #F8F8FE;
+  border-radius: 6px;
+  line-height: 2.5;
+}
+
+.lawyer .stars {
+  margin-top: 10px;
+  margin-left: 16px;
+}
+
+.lawyer .stars .star {
+  -webkit-transform: translateY(1px);
+          transform: translateY(1px);
+}
+
+.lawyer .stars span {
+  font-family: "Proxima Nova Regular", sans-serif;
 }
 /*# sourceMappingURL=main.css.map */
