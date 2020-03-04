@@ -37,6 +37,24 @@ a {
   margin: 0;
 }
 
+.no {
+  color: #8c8da4;
+  font-family: "Proxima Nova Semibold", sans-serif;
+  font-size: 16px;
+}
+
+.cons {
+  color: #161737;
+  margin-top: 15px;
+  font-family: "Proxima Nova Regular", sans-serif;
+}
+
+.yes {
+  color: #10A578;
+  font-family: "Proxima Nova Semibold", sans-serif;
+  font-size: 16px;
+}
+
 h4 {
   font-family: "Proxima Nova Semibold", sans-serif;
   font-size: 42px;
@@ -492,18 +510,6 @@ h4 {
   font-size: 15px;
 }
 
-.lawyers .consultation .yes {
-  color: #10A578;
-  font-family: "Proxima Nova Semibold", sans-serif;
-  font-size: 16px;
-}
-
-.lawyers .consultation .no {
-  color: #8c8da4;
-  font-family: "Proxima Nova Semibold", sans-serif;
-  font-size: 16px;
-}
-
 .lawyers .weekdays {
   border: 1px solid #10A578;
   padding: 5px;
@@ -525,6 +531,7 @@ h4 {
 }
 
 .lawyer_block {
+  border: 1px solid #e7e8f4;
   padding-bottom: 20px;
 }
 
@@ -558,7 +565,7 @@ h4 {
 
 .lawyer_block-ingo .specialistik a {
   text-decoration: underline;
-  margin-left: 2px;
+  margin-left: 28px;
   font-size: 14px;
   color: black;
   font-family: "Proxima Nova Regular", sans-serif;
@@ -627,5 +634,56 @@ h4 {
 
 .lawyer .stars span {
   font-family: "Proxima Nova Regular", sans-serif;
+}
+
+.lawyer .phone_card {
+  margin-left: 60px;
+  margin-top: 20px;
+}
+
+.lawyer .phone {
+  right: 100px;
+  width: 230px;
+  height: 54px;
+  text-align: center;
+  font-family: "Proxima Nova Regular", sans-serif;
+  font-size: 18px;
+  color: #161737;
+  background-color: #F8F8FE;
+  border-radius: 6px;
+  padding: 18px;
+}
+
+.lawyer .phone span {
+  font-size: 15px;
+  color: #10A578;
+  font-family: "Proxima Nova Semibold", sans-serif;
+}
+
+.lawyer .WhatsApp_block {
+  width: 230px;
+  margin-top: 10px;
+  font-family: "Proxima Nova Semibold", sans-serif;
+  font-size: 18px;
+  padding: 12px;
+  border: 1px solid #10A578;
+  border-radius: 6px;
+  height: 54px;
+}
+
+.lawyer .WhatsApp_block .wa_text {
+  color: #10A578;
+}
+
+.lawyer .WhatsApp_block .wa_icon {
+  -webkit-transform: translateY(3px);
+          transform: translateY(3px);
+  padding-right: 15px;
+}
+
+.lawyer .consultation {
+  font-family: "Proxima Nova Semibold", sans-serif;
+  width: 230px;
+  text-align: center;
 }
 /*# sourceMappingURL=main.css.map */

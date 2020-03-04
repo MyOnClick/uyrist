@@ -25,6 +25,7 @@ url('../fonts/ProximaNova-Bold.ttf') format('truetype');
 font-weight: normal;
 font-style: normal;
 }
+
 $grin:#10A578;
 $black:#161737;
 $gray:#8c8da4;
@@ -47,6 +48,21 @@ a {
 	padding: 0;
 	margin: 0;
 }
+			.no {
+		color:$gray;
+		font-family: $medium;
+		font-size: 16px;
+	}
+	.cons {
+		color:$black;
+		margin-top: 15px;
+		font-family: $regular;
+	}
+				.yes {
+		color:$grin;
+		font-family: $medium;
+		font-size: 16px;
+	}
 h4 {
 			font-family: $medium;
 		font-size: 42px;
@@ -421,16 +437,6 @@ box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
 		width: 230px;
 		text-align: center;
 		font-size: 15px;
-			.yes {
-		color:$grin;
-		font-family: $medium;
-		font-size: 16px;
-	}
-			.no {
-		color:$gray;
-		font-family: $medium;
-		font-size: 16px;
-	}
 	}
 
 .weekdays {
@@ -454,7 +460,7 @@ box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
 	margin-bottom: 20px;
 	color:$black;
 	&_block {
-		// border:1px solid $gray-light;
+		border:1px solid $gray-light;
 		padding-bottom: 20px;
 		&-photo {
 			margin: 10px;
@@ -478,7 +484,7 @@ box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
 			margin-top: 8px;
 			a {
 				text-decoration: underline;
-				margin-left: 2px;
+				margin-left: 28px;
 				font-size: 14px;
 				color:black;
 				font-family: $regular;
@@ -539,4 +545,48 @@ box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
 			font-family: $regular;
 		}
 	}
+	.phone_card{
+		margin-left: 60px;
+		margin-top: 20px;
+	}
+	.phone {
+		right: 100px;
+		width: 230px;
+		height: 54px;
+		text-align: center;
+		font-family: $regular;
+		font-size: 18px;
+		color:$black;
+		background-color: #F8F8FE;
+		border-radius:6px;
+		padding:18px;
+		span {
+			font-size: 15px;
+			color:$grin;
+			font-family: $medium;
+		}
+	}
+	.WhatsApp_block {
+		width: 230px;
+		margin-top: 10px;
+		font-family: $medium;
+		font-size: 18px;
+		padding: 12px;
+		border:1px solid $grin;
+		border-radius: 6px;
+		height: 54px;
+		.wa_text {
+			color:$grin;
+		}
+		
+		.wa_icon {
+			transform: translateY(3px);
+			padding-right: 15px;
+		}
+	}
+			.consultation { 
+				font-family: $medium;
+				width: 230px;
+				text-align: center;
+		}
 }
