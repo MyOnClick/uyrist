@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'Proxima Nova Regular';
   src: url("../fonts/ProximaNova-Regular.eot");
@@ -801,6 +802,12 @@ h4 {
   font-size: 25px;
 }
 
+.lawyer_block-ingo .name a {
+  color: #161737;
+  font-family: "Proxima Nova Regular", sans-serif;
+  font-size: 25px;
+}
+
 .lawyer_block-ingo .special, .lawyer_block-ingo .time {
   font-family: "Proxima Nova Regular", sans-serif;
   font-size: 16px;
@@ -1011,7 +1018,7 @@ h4 {
 
 .service h2 {
   font-family: "Proxima Nova Semibold", sans-serif;
-  olor: #161737;
+  color: #161737;
   font-size: 42px;
 }
 
@@ -1126,6 +1133,7 @@ h4 {
 
 .footer_social {
   text-align-last: right;
+  padding-right: 10px;
 }
 
 .footer .info {
@@ -1133,5 +1141,534 @@ h4 {
   margin-top: 30px;
   padding-top: 25px;
   padding-bottom: 25px;
+}
+
+/* Экрна юристы */
+.form {
+  background-color: #F7F7F7;
+}
+
+.form form {
+  margin-top: 20px;
+  margin-bottom: 110px;
+}
+
+.form form.catalin input {
+  float: left;
+  border: 1px solid #e7e8f4;
+  height: 70px;
+  width: 600px;
+  margin: 0;
+  -webkit-appearance: none;
+  outline: none;
+  border-radius: 6px 0 0 6px;
+}
+
+.form form.catalin button {
+  float: left;
+  border: none;
+  background-color: #10A578;
+  border-radius: 0 6px 6px 0;
+  border: 1px solid #e7e8f4;
+  border-left: none;
+  padding: 0;
+  margin: 0;
+  width: 174px;
+  height: 70px;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  font-family: "Proxima Nova Semibold", sans-serif;
+  font-size: 20px;
+}
+
+.form form.catalin input::-webkit-input-placeholder {
+  color: #8c8da4;
+  font-family: "Proxima Nova Regular", sans-serif;
+  font-size: 18px;
+  padding: 24px;
+}
+
+.form input[type="text"] {
+  padding: 24px;
+}
+
+.form form.catalin input:-moz-placeholder {
+  color: #8c8da4;
+  font-family: "Proxima Nova Regular", sans-serif;
+  font-size: 18px;
+  padding: 24px;
+}
+
+.form form.catalin input:-ms-input-placeholder {
+  color: #8c8da4;
+  font-family: "Proxima Nova Regular", sans-serif;
+  font-size: 18px;
+  padding: 24px;
+}
+
+.title {
+  background-color: #fff;
+  border-bottom: 1px solid #e7e8f4;
+  margin-bottom: 45px;
+  padding-bottom: 45px;
+  margin-top: 17px;
+}
+
+.head h4 {
+  font-size: 50px;
+  font-family: "Proxima Nova Semibold", sans-serif;
+  margin: 24px 0 9px 0;
+}
+
+.head a {
+  font-size: 15px;
+  font-family: "Proxima Nova Regular", sans-serif;
+  color: #161737;
+}
+
+.head_special {
+  font-size: 15px;
+  font-family: "Proxima Nova Regular", sans-serif;
+  color: #8c8da4;
+}
+
+.head_img img {
+  -webkit-transform: translateY(3px);
+          transform: translateY(3px);
+  margin: 0 4px;
+}
+
+.head_subtitle {
+  font-size: 16px;
+  color: #8c8da4;
+  font-family: "Proxima Nova Regular", sans-serif;
+}
+
+.head_more {
+  font-size: 16px;
+  color: #10A578;
+  font-family: "Proxima Nova Regular", sans-serif;
+}
+
+.head_civil {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #161737;
+  font-family: "Proxima Nova Regular", sans-serif;
+  border: 1px solid #e7e8f4;
+  padding: 20px;
+  border-radius: 6px;
+}
+
+.head_civil img {
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+  margin-left: 240px;
+}
+
+.head_sort {
+  margin-top: 20px;
+  margin-left: 20px;
+  font-size: 18px;
+  font-family: "Proxima Nova Regular", sans-serif;
+  color: #161737;
+  padding: 10px;
+  padding-left: 20px;
+}
+
+.head_sort-info {
+  font-size: 16px;
+}
+
+.head_sort-info img {
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+}
+
+.lawyer_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 80px;
+}
+
+.lawyer_btn button {
+  height: 70px;
+  width: 360px;
+  background-color: transparent;
+  border: 1px solid #10A578;
+  border-radius: 6px;
+  color: #10A578;
+  font-family: "Proxima Nova Semibold", sans-serif;
+}
+
+.lawyer_btn img {
+  -webkit-transform: translateX(40px);
+          transform: translateX(40px);
+}
+
+.register {
+  background-color: #F8F8FE;
+  padding-top: 80px;
+  text-align: center;
+  font-family: "Proxima Nova Semibold", sans-serif;
+  color: #161737;
+}
+
+.register_title {
+  font-size: 30px;
+  line-height: 1.5;
+}
+
+.register_conditions {
+  margin-top: 16px;
+  font-size: 20px;
+}
+
+.register_conditions a {
+  color: #10A578;
+}
+
+.register_btn button {
+  margin-top: 30px;
+  color: white;
+  font-family: "Proxima Nova Semibold", sans-serif;
+  font-size: 18px;
+  border-radius: 6px;
+  background-color: #10A578;
+  padding: 24px;
+  width: 320px;
+  border: none;
+}
+
+.register_already {
+  margin-top: 40px;
+  margin-bottom: 90px;
+  width: 580px;
+  background-color: #fff;
+  padding: 30px 40px;
+  border: 1px solid #E0E0F8;
+  border-radius: 6px;
+}
+
+.register_already-title {
+  font-size: 30px;
+}
+
+.register_already-text {
+  padding-top: 10px;
+  font-size: 20px;
+}
+
+.register_already-text a {
+  color: #10A578;
+}
+
+/*Экран с юристом */
+.urist {
+  padding-top: 40px;
+}
+
+.block {
+  margin-top: 10px;
+}
+
+.block img {
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+}
+
+.block-span {
+  padding-left: 10px;
+}
+
+.lawyer_block-ingo small {
+  font-size: 15px;
+}
+
+.lawyer_block-ingo .socio_week {
+  margin-left: 10px;
+}
+
+.socio small {
+  padding-left: 30px;
+  font-size: 14px;
+}
+
+.socio span {
+  padding-left: 2px;
+}
+
+.about {
+  margin-top: 50px;
+  margin-bottom: 70px;
+  color: #161737;
+  font-family: "Proxima Nova Regular", sans-serif;
+}
+
+.about_title {
+  font-size: 30px;
+  margin-top: 40px;
+}
+
+.about_text {
+  font-size: 18px;
+  margin-top: 10px;
+  line-height: 1.6;
+}
+
+.review {
+  padding-top: 60px;
+  padding-bottom: 80px;
+  background-color: #F8F8FE;
+}
+
+.review h4 a {
+  color: #10A578;
+}
+
+.review_users {
+  margin-bottom: 20px;
+  border: 1px solid #e7e8f4;
+  border-radius: 6px;
+  background-color: white;
+  padding: 20px 30px;
+  color: #161737;
+  font-family: "Proxima Nova Regular", sans-serif;
+}
+
+.review_name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 20px;
+}
+
+.review_date {
+  margin-top: 2px;
+  font-size: 15px;
+  color: #8c8da4;
+}
+
+.review_text {
+  line-height: 1.5;
+  margin-top: 12px;
+  color: #636480;
+}
+
+.similar {
+  margin-top: 60px;
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+.similar_title {
+  text-align: left;
+}
+
+.similar_block {
+  padding: 20px;
+  font-family: "Proxima Nova Regular", sans-serif;
+  color: #161737;
+}
+
+.similar_name {
+  margin-top: 22px;
+  font-size: 18px;
+}
+
+.similar_star {
+  margin-top: 15px;
+}
+
+.similar_star img {
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+}
+
+.similar_review {
+  margin-top: 10px;
+}
+
+.similar_review img {
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+}
+
+/*Третий экран Компании*/
+.firms_block {
+  border-top: 5px solid #10A578;
+}
+
+.profile .hr {
+  border-bottom: 1px solid #e7e8f4;
+  margin-top: 40px;
+  padding-bottom: 40px;
+}
+
+.profile-section_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.profile-section_btn button {
+  margin-top: 30px;
+  color: white;
+  font-family: "Proxima Nova Semibold", sans-serif;
+  font-size: 18px;
+  border-radius: 6px;
+  background-color: #10A578;
+  padding: 24px;
+  width: 320px;
+  height: 70px;
+  border: none;
+}
+
+.profile .form_btn {
+  margin-top: 18px;
+}
+
+.profile .form_btn img {
+  -webkit-transform: translateY(8px);
+          transform: translateY(8px);
+}
+
+.profile .form_btn button {
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  color: #10A578;
+  font-family: "Proxima Nova Semibold", sans-serif;
+}
+
+.profile .redacted button {
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  padding: 5px;
+  color: #10A578;
+  font-family: "Proxima Nova Regular", sans-serif;
+}
+
+.profile_btn {
+  display: inline-block;
+}
+
+.profile_btn button {
+  background-color: transparent;
+  border: 1px solid #10A578;
+  border-radius: 4px;
+  font-size: 14px;
+  padding: 5px;
+  color: #10A578;
+  font-family: "Proxima Nova Semibold", sans-serif;
+}
+
+.profile .lawyer_block-photo {
+  text-align: center;
+}
+
+.profile .lawyer_block-photo img {
+  width: 135px;
+}
+
+.profile .title {
+  margin-bottom: 0;
+}
+
+.profile_form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 26px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.profile_form .name {
+  font-size: 18px;
+  color: #8c8da4;
+}
+
+.profile_form .input {
+  padding: 20px;
+}
+
+.profile form input, .profile form textarea {
+  width: 320px;
+  margin-left: 40px;
+  display: block;
+  padding: 20px;
+  border-radius: 6px;
+  border: 1px solid #e7e8f4;
+}
+
+.profile main {
+  -webkit-transform: translateY(-57px);
+          transform: translateY(-57px);
+  font-family: "Proxima Nova Regular", sans-serif;
+}
+
+.profile section {
+  display: none;
+  padding-top: 20px;
+  border-top: 1px solid white;
+}
+
+.profile input {
+  display: none;
+}
+
+.profile label {
+  display: inline-block;
+  margin: 0 0 -1px;
+  padding: 15px 25px;
+  font-size: 20px;
+  text-align: center;
+  color: #161737;
+  border: 1px solid transparent;
+}
+
+.profile input:checked + label {
+  color: #161737;
+  border: 1px solid transparent;
+  border-bottom: 3px solid #10A578;
+  border-top: 1px solid #fff;
+}
+
+.profile #tab1:checked ~ #content1,
+.profile #tab2:checked ~ #content2,
+.profile #tab3:checked ~ #content3,
+.profile #tab4:checked ~ #content4 {
+  display: block;
+}
+
+@media screen and (max-width: 650px) {
+  .profile label {
+    font-size: 0;
+  }
+  .profile label:before {
+    margin: 0;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .profile label {
+    padding: 15px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

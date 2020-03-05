@@ -1,3 +1,4 @@
+
 @font-face {
 font-family: 'Proxima Nova Regular';
 src: url('../fonts/ProximaNova-Regular.eot');
@@ -666,6 +667,7 @@ box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
 	margin-top: 20px;
 	margin-bottom: 20px;
 	color:$black;
+	
 	&_block {
 		border:1px solid $gray-light;
 		border-radius:6px;
@@ -707,6 +709,11 @@ box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
 		.name {
 			font-family: $regular;
 			font-size: 25px;
+						a {
+			color:$black;
+			font-family: $regular;
+			font-size: 25px;
+			}
 		}
 			.special, .time {
 			font-family: $regular;
@@ -810,8 +817,9 @@ box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
 	width: 270px;
 	border:none;
 
+}	
+
 }
-	}
 //  Полезное 
 .useful {
 	&_button {
@@ -899,7 +907,7 @@ box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
 	background-color: #fff;
 	h2 {
 		font-family: $medium;
-	olor:$black;
+	color:$black;
 	font-size: 42px;
 	}
 	&_text-1 {
@@ -929,9 +937,6 @@ font-size: 17px;
 }
 // footer
 	.footer {
-		.col-sm {
-			// border:1px solid red;
-		}
 		height: 178px;
 		padding-top: 40px;
 		background-color: #F8F8FE;
@@ -1002,6 +1007,7 @@ font-size: 17px;
 		}
 		&_social {
 			text-align-last: right;
+			padding-right:10px;
 		}
 		.info {
 			border-top:1px solid $gray-light;
@@ -1010,3 +1016,483 @@ font-size: 17px;
 			padding-bottom: 25px;
 		}
 	}
+	
+
+
+
+
+/* Экрна юристы */
+//  форма
+	.form {
+background-color: #F7F7F7;
+form {
+	margin-top: 20px;
+	margin-bottom: 110px;
+}
+  form.catalin input{
+    float: left;
+    border: 1px solid $gray-light;
+    height: 70px;
+    width:600px;
+    margin: 0;
+    -webkit-appearance: none;
+    outline: none;
+    border-radius: 6px 0 0 6px;
+  }
+  form.catalin button{
+    float: left;
+    border: none;
+		background-color: $grin;
+		border-radius:0 6px 6px 0;
+		border: 1px solid $gray-light;
+		border-left:none;
+    padding: 0;
+    margin: 0;
+    width: 174px;
+    height:70px;
+    cursor: pointer;
+    text-transform: uppercase;
+		text-align: center;
+		color:white;
+		font-family: $medium;
+		font-size: 20px;
+  }
+
+
+  form.catalin input::-webkit-input-placeholder {
+     color: $gray;
+		font-family: $regular;
+		font-size: 18px;
+		padding: 24px;
+	}
+	input[type="text"]{padding: 24px;}
+   
+  form.catalin input:-moz-placeholder {
+     color: $gray;
+		font-family: $regular;
+		font-size: 18px;
+		padding: 24px;
+  }
+   
+  form.catalin input:-ms-input-placeholder {
+     color: $gray;
+		font-family: $regular;
+		font-size: 18px;
+		padding: 24px;
+	}
+}
+// Юристы и адвокаты в Нур-Султане (Астана)
+.title {
+	background-color: #fff;
+		border-bottom:1px solid $gray-light;
+	margin-bottom: 45px;
+	padding-bottom: 45px;
+	margin-top: 17px;
+}
+.head {
+	h4 {
+		font-size: 50px;
+		font-family: $medium;
+		margin: 24px 0 9px 0;
+	}
+	a {
+		font-size: 15px;
+		font-family: $regular;
+		color:$black;
+	}
+	&_special {
+				font-size: 15px;
+		font-family: $regular;
+		color:$gray;
+	}
+	&_img {
+		img {
+		transform: translateY(3px);
+		margin: 0 4px;
+		}
+	}
+	&_subtitle {
+		font-size: 16px;
+		color:$gray;
+		font-family: $regular;
+	}
+	&_more {
+		font-size: 16px;
+		color:$grin;
+		font-family: $regular;
+	}
+	&_civil {
+		margin-top: 20px;
+		font-size: 18px;
+		color:$black;
+		font-family: $regular;
+		border:1px solid $gray-light;
+		padding: 20px;
+		border-radius: 6px;
+
+		img {
+			transform: translateY(2px);
+			margin-left: 240px;
+		}
+	}
+	&_sort {
+		margin-top: 20px;
+		margin-left: 20px;
+		font-size: 18px;
+		font-family: $regular;
+		color:$black;
+		padding: 10px;
+		padding-left: 20px;
+		&-info {
+			font-size: 16px;
+			img {
+				transform: translateY(2px);
+			}
+		}
+	}
+
+}
+// Карточки юристов кнопка
+.lawyer_btn {
+	display: flex;
+	justify-content: center ; 
+	margin-bottom: 80px;
+	button {
+		height: 70px;
+		width: 360px;
+		background-color: transparent;
+		border:1px solid $grin;
+		border-radius: 6px;
+		color:$grin;
+		font-family: $medium;
+	}
+	img {
+		transform: translateX(40px);
+
+	}
+}
+// Регистрация
+.register {
+	background-color: #F8F8FE;
+	padding-top: 80px;
+	text-align: center;
+	font-family: $medium;
+	color:$black;
+	&_title {
+		font-size: 30px;
+		line-height: 1.5
+	}
+	&_conditions {
+		margin-top: 16px;
+		font-size: 20px;
+		a {
+			color:$grin;
+		}
+	}
+	&_btn {
+		button {
+		margin-top: 30px;
+		color: white;
+    font-family: "Proxima Nova Semibold", sans-serif;
+    font-size: 18px;
+    border-radius: 6px;
+    background-color: #10A578;
+    padding: 24px;
+    width: 320px;
+    border: none;
+		}
+
+	}
+	&_already {
+		margin-top: 40px;
+		margin-bottom: 90px;
+		width: 580px;
+		background-color: #fff;
+		padding: 30px 40px;
+		border:1px solid #E0E0F8;
+		border-radius: 6px;
+		&-title {
+			font-size: 30px;
+		}
+		&-text {
+			padding-top: 10px;
+			font-size: 20px;
+			a{
+				color:$grin;
+			}
+		}
+	}
+}
+
+/*Экран с юристом */
+.urist {
+	padding-top: 40px;
+}
+.block {
+	margin-top: 10px;
+	img {
+		transform: translateY(2px);
+	}
+	&-span {
+		padding-left: 10px;
+	}
+}
+.lawyer_block-ingo {
+	small {
+		font-size: 15px;
+	}
+}
+
+.lawyer_block-ingo .socio_week  {
+	margin-left: 10px;
+}
+.socio {
+	
+	small {
+		padding-left: 30px;
+		font-size: 14px;
+	}
+	span {
+		padding-left: 2px;
+	}
+}
+
+//  О специалисте 
+.about {
+	margin-top: 50px;
+	margin-bottom: 70px;
+	color:$black;
+	font-family: $regular;
+	&_title{
+		font-size: 30px;
+		margin-top: 40px;
+	}
+	&_text{
+		font-size: 18px;
+		margin-top: 10px;
+		line-height: 1.6;
+	}
+}
+// Отзывы
+.review {
+	h4 {
+			a {
+		color:$grin;
+	}
+	}
+	padding-top: 60px;
+	padding-bottom: 80px;
+	background-color: #F8F8FE;
+	&_users {
+		margin-bottom: 20px;
+		border:1px solid $gray-light;
+		border-radius:6px;
+		background-color: white;
+		padding: 20px 30px;
+		color:$black;
+		font-family: $regular;
+	}
+	&_name {
+		display: flex;
+		justify-content: space-between;
+		font-size: 20px;
+
+	}
+	&_date {
+		margin-top: 2px;
+		font-size: 15px;
+		color:$gray;
+	}
+	&_text {
+		line-height: 1.5;
+		margin-top: 12px;
+		color:#636480;
+	}
+}
+//  Похожие юристы
+.similar {
+	margin-top: 60px;
+	margin-bottom: 80px;
+	text-align: center;
+	&_title {
+		text-align: left;
+	}
+	&_block {
+		padding: 20px;
+	font-family: $regular;
+	color:$black;
+	}
+	&_name {
+		margin-top: 22px;
+		font-size: 18px;
+	}
+	&_star {
+		margin-top: 15px;
+		img {
+		transform: translateY(2px);
+	}
+	}
+	&_review {
+		margin-top: 10px;
+		img {
+			transform: translateY(2px);
+		}
+	}
+}
+
+
+/*Третий экран Компании*/
+.firms {
+	&_block {
+		border-top:5px solid $grin;
+	}
+}
+
+// Профиль
+.profile {
+	.hr {
+		border-bottom: 1px solid $gray-light;
+		margin-top: 40px;
+		padding-bottom: 40px;
+	}
+		&-section_btn{ 
+			display: flex;
+			justify-content: flex-end;
+		button {
+		margin-top: 30px;
+		color: white;
+    font-family: "Proxima Nova Semibold", sans-serif;
+    font-size: 18px;
+    border-radius: 6px;
+    background-color: $grin;
+    padding: 24px;
+		width: 320px;
+		height: 70px;
+    border: none;
+		}
+	}
+	.form_btn {
+		margin-top: 18px;
+		img {
+			transform: translateY(8px);
+		}
+		button {
+		background-color: transparent;
+		border:none;
+		font-size: 16px;
+		color:$grin;
+		font-family: $medium;
+		}
+	}
+	.redacted {
+		button {
+		background-color: transparent;
+		border:none;
+		font-size: 16px;
+		padding: 5px;
+		color:$grin;
+		font-family: $regular;
+		}
+	}
+	&_btn {
+		display: inline-block;
+		button {
+		background-color: transparent;
+		border:1px solid $grin;
+		border-radius:4px; 
+		font-size: 14px;
+		padding: 5px;
+		color:$grin;
+		font-family: $medium;
+		}
+	}
+.lawyer_block-photo {
+	text-align: center;
+img {
+	width: 135px;
+}
+}
+.title {
+	margin-bottom: 0;
+}
+&_form {
+	display: flex;
+	margin-top: 26px;
+	align-items:center;
+.name {
+	font-size: 18px;
+	color:$gray;
+
+}
+.input {
+	padding: 20px;
+}
+}
+form {
+	input, textarea{
+		width: 320px;
+		margin-left: 40px;
+		display: block;
+		padding: 20px;
+		border-radius:6px;
+		border:1px solid $gray-light;
+	}
+}
+main{
+	// border:1px solid red;
+	transform: translateY(-57px);
+	font-family: $regular;
+}
+section {
+	// border:1px solid red;
+  display: none;
+  padding-top: 20px;
+  border-top: 1px solid white;
+}
+
+input {
+  display: none;
+}
+
+label {
+  display: inline-block;
+  margin: 0 0 -1px;
+  padding: 15px 25px;
+	font-size: 20px;
+  text-align: center;
+  color: $black;
+  border: 1px solid transparent;
+}
+
+input:checked + label {
+  color: $black;
+  border: 1px solid transparent;
+  border-bottom: 3px solid $grin;
+  border-top: 1px solid #fff;
+}
+
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3,
+#tab4:checked ~ #content4 {
+  display: block;
+}
+
+@media screen and (max-width: 650px) {
+  label {
+    font-size: 0;
+  }
+  label:before {
+    margin: 0;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  label {
+    padding: 15px;
+  }
+}
+
+
+}
