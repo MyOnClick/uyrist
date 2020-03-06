@@ -7,31 +7,213 @@
 <link rel="stylesheet" href="css/normalize.css">
 <link rel="stylesheet" href="css/main.css">
 <link rel="stylesheet" href="css/bootstrap-grid.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
 <title>Uyrist.kz</title>
 </head>
 <body>
+
+
+
+
 <!-- Навигация -->
-<div class="navigation">
-	<div class="container">
-		<div class="row">
-			<div class="navigation_logo"><img src="image/Main/image 1.svg" alt="Лого"></div>
-			<div class="navigation_city"><a href="#">Нур-Султан (Астана)<img src="image/Main/Icon.svg" alt="Стрелка" class="navigation_city_img"></a></div>
-			<div class="navigation_specialists"><a href="yurists.html">Специалисты</a></div>
-			<div class="navigation_compani"><a href="Compani.html">Юридические компании</a></div>
-			<div class="navigation_notaries"><a href="#">Нотариусы</a></div>
-			<div class="navigation_benefit"><a href="Profile.html">Полезное</a></div>
-			<div class="navigation_circuit"><button class="btn-1">Вход</button></div>
-			<div class="navigation_fill"><button class="btn-2">Регистрация</button></div>
+<div class="topN">
+	<div class="topnav" id="myTopnav">
+		<div class="container">
+			<a class="link" href="#home" class="active logo"><img src="image/Main/image 1.svg" alt="Лого"></a>
+			<div class="topn">
+				<a class="link" href="#news">Нур-Султан (Астана)<img src="image/Main/Icon.svg" alt="Стрелка"
+						class="navigation_city_img"></a>
+				<a class="link" href="yurists.html">Специалисты</a>
+				<a class="link" href="Compani.html">Юридические компании</a>
+				<a class="link" href="#">Нотариусы</a>
+				<a class="link" href="#">Полезное</a>
+			</div>
+			<a class="Buttons" href="#"><button class="btn_stroke">Вход</button>
+				<button class="btn_fill model_link">Регистрация</button></a>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<i class="fa fa-bars"></i>
+			</a>
 		</div>
+
 	</div>
 </div>
+
+<div id="mask"></div> <!-- The transperent background overlay -->
+
+<div class="model">
+	<!-- The popup -->
+	<div class="constraint">
+		<!-- Popup content -->
+		<div class="model_heder">
+			<div class="model_heder-text">Регистрация</div>
+		</div>
+		<div class="model_type">Выберите тип учетной записи</div>
+	<main>
+		<input id="tab1" type="radio" name="tabs" checked>
+		<label class="model_content-title" for="tab1">Физическое лицо</label>
+	
+		<input id="tab2" type="radio" name="tabs">
+		<label class="model_content-title" for="tab2">Юрист/адвокат</label>
+
+			<input id="tab3" type="radio" name="tabs">
+			<label class="model_content-title" for="tab3">Юридическая компания</label>
+	
+		<section  id="content1">
+			<form action="#">
+				<div class="col-sm">
+					<input type="text" placeholder="Имя">
+				</div>
+				<div class="col-sm">
+					<input type="email" placeholder="Эл почта">
+				</div>
+				<div class="col-sm">
+					<input type="password" placeholder="Пароль">
+				</div>
+				<div class="col-sm">
+					<input type="password" placeholder="Повторите пароль">
+				</div>
+			</form>
+					<label class="model_check">
+						<input class="model_check-i" type="checkbox"> Даю согласие на обработку персональных данных
+					</label>
+					<div class="model_btn">
+						<button>Зарегистрироваться</button>
+					</div>
+					<div class="model_socal">
+						<div class="col-sm">
+							<div class="model_socal-text">Регистрация через соцсети</div>
+						</div>
+						<div class="col-sm">
+							<div class="model_socal-icon">
+<a href="#"><img src="image/Modal/Icon_google.svg" alt="Icon"></a>
+<a href="#"><img src="image/Modal/Icon_fb.svg" alt="Icon"></a>
+<a href="#"><img src="image/Modal/Icon_vk.svg" alt="Icon"></a>
+							</div>
+						</div>
+					</div>
+		</section>
+		<section id="content2">
+				<form action="#">
+				<div class="col-sm">
+					<input type="text" placeholder="Фамилия">
+				</div>
+				<div class="col-sm">
+					<input type="text" placeholder="Имя">
+				</div>
+				<div class="col-sm">
+					<input type="text" placeholder="Отчество">
+				</div>
+					<div class="col-sm">
+						<input type="phone" placeholder="Телефон">
+					</div>
+					<div class="col-sm">
+						<input type="email" placeholder="Эл. почта">
+					</div>
+					<div class="col-sm">
+						<input type="text" placeholder="Нур-Султан(Астана)">
+					</div>
+					<div class="col-sm">
+						<input type="text" placeholder="Специализация">
+					</div>
+					<div class="col-sm">
+						<div class="model_special">
+							<span class="model_special-cadr">
+								Уголовное право <button>Удалить</button>
+							</span>
+							<span class="model_special-cadr">
+								Административное право <button>Удалить</button>
+							</span>
+						</div>
+					</div>
+					<div class="col-sm">
+						<input type="password" placeholder="Пароль">
+					</div>
+					<div class="col-sm">
+						<input type="password" placeholder="Повторите пароль">
+					</div>
+				</form>
+				<label class="model_check">
+					<input class="model_check-i" type="checkbox"> Даю согласие на обработку персональных данных
+				</label>
+				<div class="model_btn">
+					<button>Зарегистрироваться</button>
+				</div>
+			</p>
+		</section>
+		 <section id="content3">
+				<form action="#">
+					<div class="col-sm">
+						<input type="text" placeholder="Название компании">
+					</div>
+					<div class="col-sm">
+						<input type="phone" placeholder="Телефон">
+					</div>
+					<div class="col-sm">
+						<input type="email" placeholder="Эл. почта">
+					</div>
+					<div class="col-sm">
+						<input type="text" placeholder="Нур-Султан(Астана)">
+					</div>
+						<div class="col-sm">
+							<input type="text" placeholder="Специализация">
+						</div>
+						<div class="col-sm">
+							<div class="model_special">
+								<span class="model_special-cadr">
+									Уголовное право  <button>Удалить</button>
+								</span>
+								<span class="model_special-cadr">
+									Административное право <button>Удалить</button>
+								</span>
+							</div>
+						</div>
+				<div class="col-sm">
+					<input type="password" placeholder="Пароль">
+				</div>
+				<div class="col-sm">
+					<input type="password" placeholder="Повторите пароль">
+				</div>
+				</form>
+					<label class="model_check">
+						<input class="model_check-i" type="checkbox"> Даю согласие на обработку персональных данных
+					</label>
+					<div class="model_btn">
+						<button>Зарегистрироваться</button>
+					</div>
+	
+		</div>
+	</div>
+</section>
+</main>
+	
+
+
+
+
+
+
+
+
+
+
+
+		
+	</div> <!-- /Popup content -->
+
+</div> <!-- /The popup -->
+
+
+</div>
+
+
 
 <!-- Главная -->
 <div class="main">
 <div class="container">
 <div class="row">
-<div class="col-12"><h1 class="title">Поиск юристов и адвокатов <br>
+<div class="col-12"><h1 class="">Поиск юристов и адвокатов <br>
 	в <span>Нур-Султане (Астана)</span></h1></div>
 	<div class="w-100"></div>
 <form class="catalin">
@@ -43,23 +225,23 @@
 </div>
 <div class="factodes">
 	<div class="container">
-		<div class="row factodes_blocks ">
-			<div class="col-4 factodes_block">
-				<img src="image/Main/Vector1.svg" alt="" class="factodes_img">
+		<div class="row factodes_blocks">
+			<div class="col-sm-4 factodes_block">
+				<img src="image/Main/Vector1.svg" alt="Icon" class="factodes_img">
 				<div class="factodes_text">
 					<div class="factodes_textt">Юристы</div>
 					<div class="factodes_fact"> <span>122</span> юриста</div>
 				</div>
 			</div>
-			<div class="col-4 factodes_block">
-				<img src="image/Main/Vector2.svg" alt="" class="factodes_img">
+			<div class="col-sm-4 factodes_block">
+				<img src="image/Main/Vector2.svg" alt="Icon" class="factodes_img">
 				<div class="factodes_text">
-					<div class="factodes_textt">Юридические&nbsp;компании</div>
+					<div class="factodes_textt">Юридические компании</div>
 					<div class="factodes_fact"> <span>43</span> компании</div>
 				</div>
 			</div>
-			<div class="col-4 factodes_block">
-				<img src="image/Main/Vector3.svg" alt="" class="factodes_img">
+			<div class="col-sm-4 factodes_block">
+				<img src="image/Main/Vector3.svg" alt="Icon" class="factodes_img">
 				<div class="factodes_text">
 					<div class="factodes_textt">Нотариусы</div>
 					<div class="factodes_fact"> <span>24</span> нотариуса</div>
@@ -72,8 +254,8 @@
 <div class="special">
 	<div class="container">
 		<h4 class="title">Специализация </h4> 
-		<div class="row">
-			<div class="col-3">
+		<div class="row special_blocks ">
+			<div class="col-sm-3 ">
 			<div class="special_block">
 				<div class="special_text">Гражданское <br> <span>право</span></div>
 				<div class="special_fact">121
@@ -82,7 +264,7 @@
 				</a></div>
 			</div>
 			</div>
-						<div class="col-3">
+						<div class="col-sm-3">
 							<div class="special_block">
 								<div class="special_text">Административное <br> <span>право</span></div>
 								<div class="special_fact">24
@@ -91,7 +273,7 @@
 									</a>
 								</div>
 							</div>
-						</div><div class="col-3">
+						</div><div class="col-sm-3">
 							<div class="special_block">
 								<div class="special_text">Уголовное <br> <span>право</span></div>
 								<div class="special_fact">34
@@ -101,7 +283,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-3 ">
+						<div class="col-sm-3">
 							<div class="special_block">
 								<div class="special_text">Семейное <br> <span>право</span></div>
 								<div class="special_fact">43
@@ -114,7 +296,7 @@
 					</div>
 			
 				<div class="row services">
-					<div class="col-3">
+					<div class="col-sm-3">
 						<div class="services_block">
 							<a href="#">Земельное право <span>(66)</span></a>
 							<a href="#">ДТП, ГИБДД, ПДД <span>(42)</span></a>
@@ -123,30 +305,31 @@
 							<a href="#">Страховое право <span>(51)</span></a>
 							</div>
 							</div>
-							<div class="col-3">
+							<div class="col-sm-3">
 								<div class="services_block">
 									<a href="#">Алименты <span>(73)</span></a>
 									<a href="#">Трудовое право <span>(82)</span></a>
-									<a href="#">Право по государственным <br> закупкам <span>(25)</span></a>
-									<a href="#">ЖКХ <span>(59)</span></a>
+									<a class="all" href="#">Все специальности (16)</a>
+									<a href="#" class="db">Право по государственным <br> закупкам <span>(25)</span></a>
+									<a href="#" class="db">ЖКХ <span>(59)</span></a>
 								</div>
 							</div>
-							<div class="col-3">
+							<div class="col-sm-3 db">
 								<div class="services_block">
 									<a href="#">Наследство <span>(76)</span></a>
 									<a href="#">Арбитраж <span>(21)</span></a>
 									<a href="#">Авторское право <span>(28)</span></a>
 								</div>
 							</div>
-							<div class="col-3">
+							<div class="col-sm-3 db">
 								<div class="services_block">
 									<a href="#">Право собственности <span>(80)</span></a>
 									<a href="#">Корпоративное право <span>(57)</span></a>
 									<a href="#">Нотариат <span>(13)</span></a>
 								</div>
 							</div>
-						</div>
 				</div>
+
 </div>
 <!-- Более 120 юристов-->
 <section class="container">
@@ -160,8 +343,9 @@
 		<div class="container">
 			<div class="row lawyer_block">
 	
-				<div class="col-2 lawyer_block-photo ">
+				<div class="col-sm-2 lawyer_block-photo ">
 					<img src="image/Lawyers/Rectangle 26.png" alt="Фото" class="photo">
+					
 					<div class="rewyes">
 						<img src="image/Lawyers/icon/Vector.svg" alt="Иконка отзывы" class="rewyes_icon">
 						<span class="rewyes_text">12 отзывов</span>
@@ -175,17 +359,17 @@
 						<span>5.0</span>
 					</div>
 				</div>
-				<div class="col-6 lawyer_block-ingo">
+				<div class="col-sm-6 lawyer_block-ingo">
 					<div class="name">Муканов Мурат Муканович</div>
 					<div class="row">
-						<div class="col-4">
+						<div class="col-sm-4">
 							<div class="specialistik">
 								<img src="image/Lawyers/icon/icon4.svg" alt="Иконка" class="special_img">
 								<span class="special">Специализация </span>
 								<a href="#"></a>
 							</div>
 						</div>
-						<div class="col-8 uslugi">
+						<div class="col-sm-8 uslugi">
 							<span class="spec">Уголовное право</span>
 							<span class="spec">Земельное право</span>
 							<span class="spec">Семейное право</span>
@@ -198,13 +382,13 @@
 							<span class=""></span>
 							<span class=""></span>
 						</div>
-						<div class="col-12">
+						<div class="col-sm-12">
 							<div class="specialistik">
 								<img src="image/Lawyers/icon/icon3.svg" alt="Иконка" class="special_img">
 								<span class="special">Нур-Султан (Астана), г. Нур-Султан, пр. Женис, 20 (ВП-1)</span>
 							</div>
 						</div>
-						<div class="col">
+						<div class="col-sm">
 							<div class="specialistik">
 								<img src="image/Lawyers/icon/icon2.svg" alt="Иконка" class="special_img">
 								<span class="special">График работы:</span>
@@ -221,7 +405,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-3 phone_card ">
+				<div class="col-sm-3 phone_card ">
 					<div class="phone">8 7XX XX XX <span>Показать</span></div>
 					<div class="WhatsApp_block">
 						<a href="#" class="wa_icon"><img class="wa_icon" src="image/Lawyers/icon/icon_WhatsApp.svg" alt="Wa_icon"></a>
@@ -244,7 +428,7 @@
 		<div class="container">
 			<div class="row lawyer_block">
 	
-				<div class="col-2 lawyer_block-photo ">
+				<div class="col-sm-2 lawyer_block-photo ">
 					<img src="image/Lawyers/Dastan.png" alt="Фото" class="photo">
 					<div class="rewyes">
 						<img src="image/Lawyers/icon/Vector.svg" alt="Иконка отзывы" class="rewyes_icon">
@@ -259,7 +443,7 @@
 						<span>4.0</span>
 					</div>
 				</div>
-				<div class="col-6 lawyer_block-ingo">
+				<div class="col-sm-6 lawyer_block-ingo">
 					<div class="name">Абильдин Дастан</div>
 					<div class="row">
 						<div class="col-4">
@@ -269,7 +453,7 @@
 								<a href="#">Показать все (27)</a>
 							</div>
 						</div>
-						<div class="col-8 uslugi">
+						<div class="col-sm-8 uslugi">
 							<span class="spec">Уголовное право</span>
 							<span class="spec">Земельное право</span>
 							<span class="spec">Семейное право</span>
@@ -288,7 +472,7 @@
 								<span class="special">Нур-Султан (Астана), г. Нур-Султан, ул. Кенесары, 69</span>
 							</div>
 						</div>
-						<div class="col">
+						<div class="colsm-">
 							<div class="specialistik">
 								<img src="image/Lawyers/icon/icon2.svg" alt="Иконка" class="special_img">
 								<span class="special">График работы:</span>
@@ -343,7 +527,7 @@
 						<span>5.0</span>
 					</div>
 				</div>
-				<div class="col-6 lawyer_block-ingo">
+				<div class="col-sm-6 lawyer_block-ingo">
 					<div class="name">Ибадуллаев Нурхан</div>
 					<div class="row">
 						<div class="col-4">
@@ -499,28 +683,28 @@
 		<div class="container">
 			<h4 class="title">Полезное</h4>
 			<div class="row">
-				<div class="col-sm-3">
+				<div class="col-sm-3 useful_block">
 					<div class="useful_img"><img src="image/Useful/1.png" alt="Фото"></div>
 					<div class="useful_date"><span>24.02.2020</span></span></div>
 					<div class="useful_text">По каким правилам в 2020 году платить компенсацию за неиспользованный отпуск при увольнении работника
 					</div>
 					<div class="useful_read">Читать далее</div>
 				</div>
-				<div class="col-sm-3">
+				<div class="col-sm-3 useful_block">
 					<div class="useful_img"><img src="image/Useful/2.png" alt="Фото"></div>
 					<div class="useful_date"><span>24.02.2020</span></span></div>
 					<div class="useful_text">Что включить в должностную инструкцию юриста
 					</div>
 					<div class="useful_read">Читать далее</div>
 				</div>
-				<div class="col-sm-3">
+				<div class="col-sm-3 useful_block">
 					<div class="useful_img"><img src="image/Useful/3.png" alt="Фото"></div>
 					<div class="useful_date"><span>24.02.2020</span></span></div>
 					<div class="useful_text">6 интересных выводов арбитражных судов о банкротстве в январе 2020 года
 					</div>
 					<div class="useful_read">Читать далее</div>
 				</div>
-				<div class="col-sm-3">
+				<div class="col-sm-3 useful_block">
 					<div class="useful_img"><img src="image/Useful/4.png" alt="Фото"></div>
 					<div class="useful_date"><span>24.02.2020</span></span></div>
 					<div class="useful_text">Чем поможет направление адвокатского запроса
@@ -598,17 +782,18 @@
 				<div class="col-sm">
 					<div class="footer_companies"><a href="#">Юридические&nbsp;компании</a></div>
 				</div>
-				<div class="col-sm">
-					<div class="footer_notaries"><a href="#">Нотариусы</a></div>
-				</div>
-				<div class="col-sm">
-					<div class="footer_useful"><a href="#">Полезное</a></div>
-				</div>
-				<button class="footer_btn-1" href="#">Вход</button>
-				<button class="footer_btn-2" href="#">Регистрация</button>
+								<div class="col-sm">
+									<div class="footer_notaries"><a href="#">Нотариусы</a></div>
+								</div>
+								<div class="col-sm">
+									<div class="footer_notaries"><a href="#">Полезное</a></div>
+								</div>
+
+													<button class="footer_btn-1" href="#">Вход</button>
+													<button class="footer_btn-2" href="#">Регистрация</button>
 		</div>
 		<div class="row info">
-			<div class="col-sm">
+			<div class="col-sm-12">
 				<div class="footer_info">По всем вопросам пишите нам на почту <a href="#">info@yuristy.kz</a></div>
 			</div>
 			<div class="footer_social"><a href="#"><img src="image/Footer/Facebook.svg" alt="Facebook"></a></div>
@@ -620,10 +805,9 @@
 
 
 
-
 <script src="js/jquery-1.x-git.min.js"></script>
-<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js'></script>
-<script src="./script.js"></script>
+	<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js'></script>
+<!-- <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js'></script> -->
 <script src="js/bootstrap.min.js"></script>
 <script src="js/script.js"></script>
 </body>
