@@ -15,7 +15,7 @@ jQuery(document).ready(function ($) {
 	$('.model_link').click(function () {
 		$('#mask').fadeIn(300);
 		$('.model').delay(10).animate({
-			top: ($(window).height() - $('.model').outerHeight()) /100
+			top: ($(window).height() + 1100 - $('.model').outerHeight()) /4
 		}, 400);
 	});
 

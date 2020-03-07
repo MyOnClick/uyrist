@@ -39,14 +39,24 @@ a {
   z-index: 100;
   background: rgba(0, 0, 0, 0.35);
   width: 100%;
-  height: 100%;
+  min-height: 100%;
 }
 
 .model {
-  position: fixed;
-  top: -1200px;
+  position: absolute;
+  top: -2000px;
   z-index: 101;
   width: 600px;
+  min-height: 100%;
+}
+
+.model .close {
+  cursor: pointer;
+}
+
+.model .close img {
+  -webkit-transform: translate(570px, 35px);
+          transform: translate(570px, 35px);
 }
 
 .model_heder {
@@ -120,6 +130,32 @@ a {
   font-family: "Proxima Nova Semibold", sans-serif;
 }
 
+.model .chB input[type="checkbox"] {
+  display: none;
+}
+
+.model .chB label::before {
+  content: " ";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  border-radius: 3px;
+  border: 1px solid #e7e8f4;
+  margin-left: -10px;
+  margin-right: 10px;
+}
+
+.model .chB input:checked + label {
+  border: none;
+}
+
+.model .chB input[type="checkbox"]:checked + label::before {
+  background-image: url(../image/Mobile/Galka.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
 .model .model_check {
   font-size: 14px;
   font-family: "Proxima Nova Regular", sans-serif;
@@ -182,19 +218,6 @@ a {
   }
 }
 
-.modal {
-  height: 100%;
-}
-
-.modal-body {
-  overflow: hidden;
-  height: 100%;
-}
-
-.modal-body-text {
-  overflow: auto;
-}
-
 .model .constraint {
   background: #fff;
   text-align: center;
@@ -229,6 +252,12 @@ a {
 
 .topn {
   padding-top: 5px;
+}
+
+.topN {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
 }
 
 .topnav {
@@ -685,20 +714,6 @@ h4 {
 }
 
 .main input[type="text"] {
-  padding: 24px;
-}
-
-.main form.catalin input:-moz-placeholder {
-  color: #8c8da4;
-  font-family: "Proxima Nova Regular", sans-serif;
-  font-size: 18px;
-  padding: 24px;
-}
-
-.main form.catalin input:-ms-input-placeholder {
-  color: #8c8da4;
-  font-family: "Proxima Nova Regular", sans-serif;
-  font-size: 18px;
   padding: 24px;
 }
 
@@ -1236,11 +1251,16 @@ h4 {
 }
 
 .footer_social {
-  text-align-last: right;
   padding-right: 10px;
 }
 
 .footer .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   border-top: 1px solid #e7e8f4;
   padding-top: 25px;
 }
@@ -1844,6 +1864,9 @@ h4 {
 }
 
 @media (max-width: 378px) {
+  .title {
+    border: none;
+  }
   .navbar-brand {
     padding: 0;
     width: 30px;
@@ -1875,12 +1898,20 @@ h4 {
     background: url(../image/Mobile/main_img.png);
     padding: 20px;
   }
+  .main form.catalin input::-webkit-input-placeholder {
+    padding: 0px;
+  }
+  .main input[type="text"] {
+    padding: 24px;
+    font-family: "Proxima Nova Regular", sans-serif;
+  }
   .main h1 {
     margin-top: 50px;
     margin-bottom: 26px;
     padding: 0;
-    font-size: 28px;
-    width: 320px;
+    font-size: 26px;
+    line-height: 1.2;
+    width: 100%;
   }
   .main form {
     display: -webkit-box;
@@ -1891,15 +1922,17 @@ h4 {
         -ms-flex-direction: column;
             flex-direction: column;
     margin-bottom: 100px;
+    width: 100%;
   }
   .main form.catalin input {
-    max-width: 320px;
+    width: 100%;
+    max-width: 360px;
+    border-radius: 6px;
   }
   .main form.catalin button {
     border-radius: 6px;
     margin-top: 20px;
     width: 100%;
-    max-width: 320px;
     font-size: 18px;
   }
   .factodes {
@@ -1911,11 +1944,23 @@ h4 {
             justify-content: center;
   }
   .factodes_blocks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-transform: translate(0, -80px);
             transform: translate(0, -80px);
     text-align: center;
+    padding: 20px 0;
+    border-radius: 6px;
+    background-color: white;
+    margin: 20px;
+    z-index: 50;
   }
   .factodes_block {
+    border: none;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1945,28 +1990,37 @@ h4 {
     margin-top: 20px;
   }
   .special {
-    margin: 0 20px;
+    margin: 0px;
     border-bottom: none;
-    padding-bottom: 80px;
+    padding-bottom: 0px;
     color: #161737;
   }
   .special .title {
     margin: 0px 0 40px 0;
-    padding: 0;
+    padding: 0 20px;
     font-size: 30px;
   }
   .special_block {
-    width: 320px;
-    margin-bottom: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    max-width: 320px;
+    margin: 10px 20px;
   }
   .services {
+    padding-bottom: 0;
     margin-top: 40px;
   }
   .services .db {
     display: none;
   }
   .services_block {
-    margin-top: 0px;
+    margin: 0px 20px;
     padding: 0;
   }
   .services_block .all {
@@ -1977,28 +2031,38 @@ h4 {
   .services .serv {
     margin-bottom: 36px;
   }
+  .useful {
+    padding: 0 20px;
+  }
+  .useful_img {
+    margin-top: 30px;
+  }
+  .useful_img img {
+    width: 100%;
+  }
   .useful_block {
     margin-top: 20px;
   }
   .useful_button {
-    margin-top: 25px;
+    margin-top: 35px;
     width: 100%;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
   }
   .useful_text {
     font-size: 16px;
-    height: 60px;
+    height: 55px;
   }
   .useful_read {
     font-size: 16px;
   }
   .info {
     margin: 0;
-    padding-top: 80px;
+    padding: 0 20px;
+    padding-top: 60px;
   }
   .info_title h2 {
     font-size: 18px;
-    padding: 15px;
+    line-height: 1.3;
   }
   .info_title h3 {
     font-size: 18px;
@@ -2015,7 +2079,8 @@ h4 {
     width: 100%;
   }
   .service {
-    padding: 0px;
+    padding: 40px 20px;
+    padding-bottom: 0;
   }
   .service h2 {
     font-size: 30px;
@@ -2030,6 +2095,7 @@ h4 {
     padding-top: 40px;
     font-size: 18px;
     text-align: left;
+    padding: 40px 20px;
   }
   .footer button {
     margin-top: 30px;
@@ -2060,11 +2126,15 @@ h4 {
     font-size: 16px;
   }
   .footer_social {
+    text-align: left;
     margin-top: 5px;
-    padding-right: 8px;
   }
   .footer .info {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
     padding-bottom: 30px;
+    padding-left: 0;
   }
 }
 /*# sourceMappingURL=main.css.map */
