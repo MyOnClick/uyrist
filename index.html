@@ -31,7 +31,7 @@
 				<a class="link" href="#">Полезное</a>
 			</div>
 			<a class="Buttons" href="#"><button class="btn_stroke">Вход</button>
-				<button class="btn_fill model_link">Регистрация</button></a>
+				<button id="btn_fill" class="btn_fill model_link">Регистрация</button></a>
 			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
 				<i class="fa fa-bars"></i>
 			</a>
@@ -40,7 +40,7 @@
 	</div>
 </div>
 
-<div id="mask"></div> <!-- The transperent background overlay -->
+<div id="mask"></div>
 
 <div class="model">
 	<!-- The popup -->
@@ -139,9 +139,10 @@
 						<input type="password" placeholder="Повторите пароль">
 					</div>
 				</form>
-				<label class="model_check">
-					<input class="model_check-i" type="checkbox"> Даю согласие на обработку персональных данных
-				</label>
+<div class="chB">
+	<input class="model_check-i" type="checkbox" id="check">
+	<label for="check" class="model_check">Даю согласие на обработку персональных данных</label>
+</div>
 				<div class="model_btn">
 					<button>Зарегистрироваться</button>
 				</div>
@@ -181,9 +182,10 @@
 					<input type="password" placeholder="Повторите пароль">
 				</div>
 				</form>
-					<label class="model_check">
-						<input class="model_check-i" type="checkbox"> Даю согласие на обработку персональных данных
-					</label>
+<div class="chB">
+	<input class="model_check-i" type="checkbox" id="check">
+	<label for="check" class="model_check">Даю согласие на обработку персональных данных</label>
+</div>
 					<div class="model_btn">
 						<button>Зарегистрироваться</button>
 					</div>

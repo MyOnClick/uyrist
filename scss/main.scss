@@ -254,7 +254,6 @@ input:checked + label {
 	z-index: 1000;
 }
 .topnav {
-	// display: fixed;
 	.Buttons {
 		float:right;
 		button {
@@ -502,30 +501,6 @@ input:checked + label {
 .tabs input[name="tab-control"]:nth-of-type(4):checked ~ .content > section:nth-child(4) {
   display: block;
 }
-@-webkit-keyframes content {
-  from {
-    opacity: 0;
-    -webkit-transform: translateY(5%);
-            transform: translateY(5%);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: translateY(0%);
-            transform: translateY(0%);
-  }
-}
-@keyframes content {
-  from {
-    opacity: 0;
-    -webkit-transform: translateY(5%);
-            transform: translateY(5%);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: translateY(0%);
-            transform: translateY(0%);
-  }
-}
 
 // Навигация
 .col,.col-1,.col-2,.col-3, .btn {
@@ -665,19 +640,6 @@ form {
 	}
 	input[type="text"]{padding: 24px;}
    
-  // form.catalin input:-moz-placeholder {
-  //    color: $gray;
-	// 	font-family: $regular;
-	// 	font-size: 18px;
-	// 	padding: 24px;
-  // }
-   
-  // form.catalin input:-ms-input-placeholder {
-  //    color: $gray;
-	// 	font-family: $regular;
-	// 	font-size: 18px;
-	// 	padding: 24px;
-	// }
 }
 .factodes {
 
@@ -1570,12 +1532,10 @@ form {
 	}
 }
 main{
-	// border:1px solid red;
 	transform: translateY(-57px);
 	font-family: $regular;
 }
 section {
-	// border:1px solid red;
   display: none;
   padding-top: 20px;
   border-top: 1px solid white;
@@ -1614,7 +1574,7 @@ input:checked + label {
 
 
 
-//  Мобильные
+//  Мобилки
 @media screen and (max-width: 650px) {
   label {
     font-size: 0;
@@ -1687,26 +1647,10 @@ input:checked + label {
     text-align: left;
   }
 }
-@media screen and (max-width: 400px) {
-  label {
-    padding: 15px;
-  }
-}
 
 @media (max-width: 378px) {
 .title {
 	border:none;
-}
-.navbar-brand {
-	padding: 0;
-	width: 30px;
-}
-.dropdown a {
-	font-size: 14px;
-	margin-left:15px;
-}
-.header_arrow {
-	margin-right: 0px;
 }
 .btn_stroke{ 
 	margin-left: 0px;
@@ -1724,10 +1668,163 @@ input:checked + label {
 .navigation {
 	display: none;
 }
+.topN {
+	position: absolute;;
+}
+#mask {
+	width:100%;
+}
+.model {
+	width: 320px;
+	.close {
+		img {
+			transform: translate(290px,35px);
+				}
+			}
+  position: absolute; 
+		&_heder {
+		height: 70px;
+		&-text {
+			padding: 20px;
+			font-size: 20px;
+		}
+	}
+			&_type {
+			font-size: 20px;
+			margin-bottom: 20px;
+		}
+		&_btn {
+			button {
+			width: 100%;
+			border-radius:6px;
+			margin-top: 20px;
+			}
+		}
+		
+form {
+	margin-top: 10px;
+	input {
+		margin-top: 10px;
+		height: 50px;
+		padding: 10px;
+	}
+}
+section {
+  display: none;
+	padding-top: 20px;
+	padding: 20px;
 
+}
+
+input {
+  display: none;
+}
+
+label {
+  display: inline-block;
+  margin: 0 0 -1px;
+  padding: 10px;
+	font-size: 14px;
+}
+.chB {
+	text-align: left;
+	margin-top: 20px;
+	input[type="checkbox"] {
+		display: none;
+	}
+	label::before {
+		content: " ";
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+		vertical-align: middle;
+		border-radius:3px;
+		border:1px solid $gray-light;
+		margin-left: -10px;
+		margin-right: 10px;
+	}
+}
+.model_check {
+	font-size: 14px;
+	text-align: left;
+}
+.model_special {
+	text-align: left;
+	margin-top: 20px;
+	display: block;
+
+	&-cadr{
+padding: 5px;
+border-radius:4px;
+font-size: 14px;
+button {
+	border-radius:20px;
+	padding: 2px 7px;
+	font-size: 12px;
+	margin-bottom: 20px;
+}
+	}
+}
+.model_check-i {
+	display:inline-block;
+		}
+}
+.model_socal {
+	&-text {
+		font-size: 18px;
+	}
+	&-icon {
+		margin-top: 10px;
+	}
+}
+.btn_stroke {
+	padding-bottom: 20px;
+}
+.topn {
+	padding-top: 5px;
+}
+.topN {
+	position:fixed;
+	width: 100%;
+	z-index: 1000;
+}
+.topnav {
+	.Buttons {
+		float:right;
+		button {
+			margin-left: 10px;
+		}
+	}
+  background-color: $grin;
+	overflow: hidden;
+	font-size: 16px;
+	.link {
+		 padding: 25px 10px;
+	}
+	.btn_stroke{ 
+		margin-top: 14px;
+	color:white;
+	background-color:$grin;
+	padding: 12px 25px;
+	border-radius:4px;
+	font-family: $medium;
+	border:1px solid white;
+
+} 
+.btn_fill {
+	border-radius:4px;
+	background-color:white;
+	color:$grin;
+	padding: 12px 14px;
+	font-family: $medium;
+	border:none;
+
+}
+}
 .main {
 	background:url(../image/Mobile/main_img.png);
 	padding: 20px;
+	padding-top: 120px;
   form.catalin input::-webkit-input-placeholder {
 		padding: 0px;
 	}

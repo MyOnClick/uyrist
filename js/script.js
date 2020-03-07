@@ -1,3 +1,8 @@
+
+
+
+
+
 function myFunction() {
 	var x = document.getElementById("myTopnav");
 	if (x.className === "topnav") {
@@ -11,6 +16,7 @@ function myFunction() {
 jQuery.noConflict();
 jQuery(document).ready(function ($) {
 
+
 	// Model link
 	$('.model_link').click(function () {
 		$('#mask').fadeIn(300);
@@ -20,7 +26,7 @@ jQuery(document).ready(function ($) {
 	});
 
 	// Popup
-	$('#mask, .close').click(function () {
+	$('#mask, .close ').click(function () {
 		$('.model').animate({ top: -($('.model').outerHeight()) - 50 });
 		$('#mask').fadeOut(200);
 	});
