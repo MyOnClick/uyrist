@@ -8,34 +8,217 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/bootstrap-grid.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 	<title>Uyrist.kz</title>
 </head>
 
 <body>
 	<!-- Навигация -->
-<div class="topN">
-	<div class="topnav" id="myTopnav">
-		<div class="container">
-			<a class="link" href="#home" class="active logo"><img src="image/Main/image 1.svg" alt="Лого"></a>
-			<div class="topn">
-				<a class="link" href="#news">Нур-Султан (Астана)<img src="image/Main/Icon.svg" alt="Стрелка"
-						class="navigation_city_img"></a>
-				<a class="link" href="yurists.html">Специалисты</a>
-				<a class="link" href="Compani.html">Юридические компании</a>
-				<a class="link" href="#">Нотариусы</a>
-				<a class="link" href="#">Полезное</a>
-			</div>
-			<a class="Buttons" href="#"><button class="btn_stroke">Вход</button>
-				<button class="btn_fill model_link">Регистрация</button></a>
-			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
-				<i class="fa fa-bars"></i>
+<div class="boo-navbar">
+	<div class="container">
+		<!-- Mobile -->
+		<div class="boo-nav-collapsed">
+			<a href="index.html">
+				<img class="mobile-logo" src="image/Main/image 1.svg" alt="Logo" />
+			</a>
+			<button class="boo-nav-toggle">
+				<!-- <i class="fa fa-fw fa-bars"></i> -->
+				<div class="content">
+					<div class="hamburger">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+			</button>
+		</div>
+		<!-- Brand -->
+		<div class="boo-nav-brand">
+			<a href="#">
+				<img src="image/Main/image 1.svg" alt="Logo" />
 			</a>
 		</div>
+		<div class="dropdown">
+			<div class="select">
+				<span class="boo-nav-city ">Нур-Султан (Астана)<img src="image/Main/Icon.svg" alt="Стрелка"></span>
+			</div>
+			<input type="hidden" name="gender">
+			<ul class="dropdown-menu">
+				<li id="male"><span class="boo-nav-city ">Нур-Султан (Астана)<img src="image/Main/Icon.svg"
+							alt="Стрелка"></span></li>
+				<li id="female"><span class="boo-nav-city ">Нур-Султан (Астана)<img src="image/Main/Icon.svg"
+							alt="Стрелка"></span></li>
+			</ul>
+		</div>
+		<!-- Nav items -->
+		<div class="boo-nav-collapse">
+			<ul class="boo-nav-items">
+				<li><a href="yurists.html">Специалисты</a></li>
+				<li><a href="Compani.html">Юридическиекомпании</a></li>
+				<li><a href="yurist.html">Нотариусы</a></li>
+				<li><a href="Compan.html">Полезное</a></li>
+				<li><span class="nav_btn btn_stroke">Вход</span></li>
+				<li><span class="nav_btn btn_fill model_link">Регистрация</span></li>
+
+			</ul>
+		</div>
+	</div>
+</div>
+</div>
+<div id="mask"></div>
+
+<div class="model">
+	<!-- The popup -->
+	<span class="close"><img src="image/Mobile/close.svg" alt="Close"></span>
+	<div class="constraint">
+		<!-- Popup content -->
+		<div class="model_heder">
+			<div class="model_heder-text">Регистрация</div>
+		</div>
+		<div class="model_type">Выберите тип учетной записи</div>
+		<main>
+			<input id="tab1" type="radio" name="tabs" checked>
+			<label class="model_content-title" for="tab1">Физическое лицо</label>
+
+			<input id="tab2" type="radio" name="tabs">
+			<label class="model_content-title" for="tab2">Юрист/адвокат</label>
+
+			<input id="tab3" type="radio" name="tabs">
+			<label class="model_content-title" for="tab3">Юридическая компания</label>
+
+			<section id="content1">
+				<form action="#">
+					<div class="col-sm">
+						<input type="text" placeholder="Имя">
+					</div>
+					<div class="col-sm">
+						<input type="email" placeholder="Эл почта">
+					</div>
+					<div class="col-sm">
+						<input type="password" placeholder="Пароль">
+					</div>
+					<div class="col-sm">
+						<input type="password" placeholder="Повторите пароль">
+					</div>
+				</form>
+
+
+				<div class="chB">
+					<input class="model_check-i" type="checkbox" id="check">
+					<label for="check" class="model_check">Даю согласие на обработку персональных данных</label>
+				</div>
+
+				<div class="model_btn">
+					<button>Зарегистрироваться</button>
+				</div>
+				<div class="model_socal">
+					<div class="col-sm">
+						<div class="model_socal-text">Регистрация через соцсети</div>
+					</div>
+					<div class="col-sm">
+						<div class="model_socal-icon">
+							<a href="#"><img src="image/Modal/Icon_google.svg" alt="Icon"></a>
+							<a href="#"><img src="image/Modal/Icon_fb.svg" alt="Icon"></a>
+							<a href="#"><img src="image/Modal/Icon_vk.svg" alt="Icon"></a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="content2">
+				<form action="#">
+					<div class="col-sm">
+						<input type="text" placeholder="Фамилия">
+					</div>
+					<div class="col-sm">
+						<input type="text" placeholder="Имя">
+					</div>
+					<div class="col-sm">
+						<input type="text" placeholder="Отчество">
+					</div>
+					<div class="col-sm">
+						<input type="phone" placeholder="Телефон">
+					</div>
+					<div class="col-sm">
+						<input type="email" placeholder="Эл. почта">
+					</div>
+					<div class="col-sm">
+						<input type="text" placeholder="Нур-Султан(Астана)">
+					</div>
+					<div class="col-sm">
+						<input type="text" placeholder="Специализация">
+					</div>
+					<div class="col-sm">
+						<div class="model_special">
+							<span class="model_special-cadr">
+								Уголовное право <button>Удалить</button>
+							</span>
+							<span class="model_special-cadr">
+								Административное право <button>Удалить</button>
+							</span>
+						</div>
+					</div>
+					<div class="col-sm">
+						<input type="password" placeholder="Пароль">
+					</div>
+					<div class="col-sm">
+						<input type="password" placeholder="Повторите пароль">
+					</div>
+				</form>
+				<div class="chB">
+					<input class="model_check-i" type="checkbox" id="check">
+					<label for="check" class="model_check">Даю согласие на обработку персональных данных</label>
+				</div>
+				<div class="model_btn">
+					<button>Зарегистрироваться</button>
+				</div>
+				</p>
+			</section>
+			<section id="content3">
+				<form action="#">
+					<div class="col-sm">
+						<input type="text" placeholder="Название компании">
+					</div>
+					<div class="col-sm">
+						<input type="phone" placeholder="Телефон">
+					</div>
+					<div class="col-sm">
+						<input type="email" placeholder="Эл. почта">
+					</div>
+					<div class="col-sm">
+						<input type="text" placeholder="Нур-Султан(Астана)">
+					</div>
+					<div class="col-sm">
+						<input type="text" placeholder="Специализация">
+					</div>
+					<div class="col-sm">
+						<div class="model_special">
+							<span class="model_special-cadr">
+								Уголовное право <button>Удалить</button>
+							</span>
+							<span class="model_special-cadr">
+								Административное право <button>Удалить</button>
+							</span>
+						</div>
+					</div>
+					<div class="col-sm">
+						<input type="password" placeholder="Пароль">
+					</div>
+					<div class="col-sm">
+						<input type="password" placeholder="Повторите пароль">
+					</div>
+				</form>
+				<div class="chB">
+					<input class="model_check-i" type="checkbox" id="check">
+					<label for="check" class="model_check">Даю согласие на обработку персональных данных</label>
+				</div>
+				<div class="model_btn">
+					<button>Зарегистрироваться</button>
+				</div>
 
 	</div>
 </div>
-
 	<!-- Форма -->
 	<div class="form">
 		<div class="container">
