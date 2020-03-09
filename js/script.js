@@ -19,28 +19,7 @@ $(document).ready(function () {
 		});
 	});
 });
-$("#select").select2(
-	{ minimumResultsForSearch: -1 }
-);
 
-
-
-
-
-
-
-
-
-
-
-
-/*Disable search box*/
-
-/*$(document).ready(function() {
-$("select").select2(
-  {minimumResultsForSearch: -1}
-);
-});*/
 jQuery.noConflict();
 jQuery(document).ready(function ($) {
 
