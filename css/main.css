@@ -2409,6 +2409,7 @@ h4 {
     margin-top: 50px;
     margin-bottom: 26px;
     padding: 0;
+    font-size: 30px;
     line-height: 1.2;
     width: 100%;
   }
@@ -2457,9 +2458,8 @@ h4 {
     text-align: center;
     padding: 20px 0;
     border-radius: 6px;
-    background-color: white;
     margin: 20px 0;
-    z-index: 50;
+    background-color: #fff;
   }
   .factodes_block {
     border: none;
@@ -2592,6 +2592,9 @@ h4 {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .info_img img {
+    width: 160px;
+  }
   .info_title {
     margin-top: 20px;
   }
@@ -2624,6 +2627,9 @@ h4 {
     font-size: 18px;
     text-align: left;
     padding: 40px 20px;
+  }
+  .footer .dropdown .select {
+    padding: 0;
   }
   .footer button {
     margin-top: 30px;
@@ -2675,6 +2681,7 @@ h4 {
             justify-content: start;
     padding-left: 0;
     padding-bottom: 0px;
+    border: none;
   }
   .footer_info {
     text-align: left;
@@ -2684,6 +2691,108 @@ h4 {
   .footer_socials {
     text-align: left;
     margin-top: 5px;
+  }
+}
+
+@media (max-width: 670px) {
+  .main {
+    padding-top: 40px;
+  }
+  .hamburger {
+    width: 10px;
+  }
+  .dropdown {
+    padding: 3px 0;
+  }
+  .boo-navbar {
+    padding: 0 20px;
+  }
+  .boo-nav-collapsed img {
+    width: 100px;
+    margin-top: 18px;
+  }
+  .boo-nav-city {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 575px) {
+  .factodes {
+    background-color: #fff;
+    margin: 0 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    z-index: 500;
+  }
+  .factodes_blocks {
+    padding: 0;
+  }
+  .factodes_block {
+    padding: 60px;
+  }
+  .special {
+    margin: 0 20px;
+  }
+  .special_blocks {
+    width: 100%;
+  }
+  .services_block {
+    margin: 0;
+  }
+  .useful .title {
+    font-size: 30px;
+    margin-bottom: 0px;
+  }
+  .footer_info {
+    font-size: 14px;
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .useful_text {
+    height: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .useful_text {
+    height: 60px;
+  }
+}
+
+@media (max-width: 320px) {
+  .hamburger {
+    width: 0px;
+  }
+  .hamburger span {
+    width: 25px;
+    height: 2px;
+  }
+  .dropdown .select {
+    padding: 0;
+  }
+  .dropdown .select .boo-nav-city {
+    font-size: 12px;
+  }
+  .boo-nav-collapsed {
+    font-size: 10px;
+  }
+  .boo-nav-collapse .btn_stroke, .boo-nav-collapse .btn_fill {
+    padding: 20px 80px;
+    font-size: 16px;
+  }
+  .boo-nav-collapse .boo-nav-items a {
+    margin-top: 0;
+    font-size: 16px;
+  }
+  .useful_text {
+    font-size: 14px;
+    height: 50px;
   }
 }
 /*# sourceMappingURL=main.css.map */

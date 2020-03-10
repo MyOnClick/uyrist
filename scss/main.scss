@@ -2175,7 +2175,7 @@ button {
 	margin-top: 50px;
 	margin-bottom:26px;
 	padding:0;
-	// font-size: 26px;
+	font-size: 30px;
 	line-height: 1.2;
 	width: 100%;
 }
@@ -2208,13 +2208,10 @@ form {
 	align-items:center;
 transform:translate(0, -80px);
 text-align: center;
-padding: 20px 0;
+padding:20px 0;
 border-radius:6px;
-background-color: white;
 margin: 20px 0;
-z-index: 50;
-
-
+background-color: #fff;
 }
 
 &_block {
@@ -2286,7 +2283,6 @@ width: 100%;
 	}
 }     
 .useful {
-
 	&_blocks {
 			display: flex;
 			flex-direction: column;
@@ -2335,6 +2331,11 @@ width: 100%;
 		display: flex;
 		flex-direction: column;
 	}
+	&_img {
+		img {
+			width: 160px;
+		}
+	}
 	&_title {
 		margin-top: 20px;
 	}
@@ -2344,8 +2345,7 @@ width: 100%;
 	&_button {
 		margin-top: 40px;
 		margin-bottom: 60px;
-	width: 100%;
-
+		width: 100%;
 }
 
 }
@@ -2371,6 +2371,9 @@ width: 100%;
 		font-size: 18px;
 		text-align: left;
 		padding: 40px 20px;
+		.dropdown .select {
+			padding: 0;
+		}
 		button {
 		margin-top: 30px;
 		}
@@ -2412,6 +2415,7 @@ width: 100%;
 			justify-content: start;
 			padding-left: 0;
 			padding-bottom: 0px;
+			border:none;
 			
 		}
 		&_info {
@@ -2424,4 +2428,122 @@ width: 100%;
 			margin-top: 5px;	
 		}
 	}
+}
+@media (max-width:670px) {
+.main {
+	padding-top: 40px;
+}
+	.hamburger {
+		width: 10px;
+	}
+	.dropdown {
+		padding: 3px 0;
+	}
+	.boo-navbar {
+		padding: 0 20px;
+	}
+	.boo-nav-collapsed {
+		img {
+			width: 100px;
+			margin-top: 18px;
+		}
+	}
+.boo-nav-city {
+	font-size: 14px;
+}
+}
+@media (max-width: 575px) {
+.factodes {
+	background-color: #fff;
+	margin: 0 20px;
+	display: flex;
+	justify-content: center;
+	z-index: 500;
+&_blocks {
+padding: 0;
+}
+&_block {
+	padding: 60px;
+}
+}
+.special {
+	margin:0 20px;
+	&_blocks {
+		width: 100%;
+	}
+}
+.services{
+
+	&_block {
+		margin: 0;
+	}
+}
+.useful {
+	.title {
+		font-size: 30px;
+		margin-bottom: 0px;
+	}
+}
+.footer {
+			&_info {
+			font-size: 14px;
+			width: 80%;
+			}
+}
+}
+@media (max-width:480px) {
+.useful {
+    
+	&_text{
+		height: 50px;
+	}
+}
+}
+@media (max-width:480px) {
+.useful {
+    
+	&_text{
+		height: 60px;
+	}
+}
+}
+@media (max-width:360px) {
+
+}
+@media (max-width:320px) {
+	.hamburger {
+		width: 0px;
+		span {
+			width: 25px;
+			height: 2px;
+		}
+	}
+	.dropdown
+	.select {
+		padding: 0;
+		.boo-nav-city {
+			font-size: 12px;
+		}
+	}
+.boo-nav-collapsed {
+font-size: 10px;
+}
+.boo-nav-collapse {
+	.btn_stroke, .btn_fill {
+	padding: 20px 80px;
+	font-size: 16px;
+}
+	.boo-nav-items {
+		a {
+			margin-top: 0;
+			font-size: 16px;
+		}
+	}
+}
+.useful {
+	&_text {
+		font-size: 14px;
+		height: 50px;
+	}
+}
 }
