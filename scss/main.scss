@@ -1399,13 +1399,20 @@ li {
 	background: url('../image/2. Main/Arrows3.svg');
 	background-repeat: no-repeat;
 	background-position: right;
-	width: 28%;
+	&-rating {
+	width: 12%;
+	}
+	&-reviews {
+		width: 21%;
+	}
+	&-consultation {
+		width: 32%;
+	}
 
 	
 	}
 }
 }
-
 
 
 
@@ -1429,7 +1436,9 @@ li {
 		color:$black;
 	}
 	&_special {
-
+		font-size: 15px;
+		font-family: $regular;
+		color:$gray;
 		a {
 				font-size: 15px;
 		font-family: $regular;

@@ -1595,7 +1595,18 @@ h4 {
   background: url("../image/2. Main/Arrows3.svg");
   background-repeat: no-repeat;
   background-position: right;
-  width: 28%;
+}
+
+.yurists .select-wrapper .select-rating {
+  width: 12%;
+}
+
+.yurists .select-wrapper .select-reviews {
+  width: 21%;
+}
+
+.yurists .select-wrapper .select-consultation {
+  width: 32%;
 }
 
 .title {
@@ -1616,6 +1627,12 @@ h4 {
   font-size: 18px;
   font-family: "Proxima Nova Regular", sans-serif;
   color: #161737;
+}
+
+.head_special {
+  font-size: 15px;
+  font-family: "Proxima Nova Regular", sans-serif;
+  color: #8c8da4;
 }
 
 .head_special a {
