@@ -1,24 +1,24 @@
 
 
-$(document).ready(function () {
-	$(function () {
-		var list = $('.js-dropdown-list');
-		var link = $('.js-link');
-		link.click(function (e) {
-			e.preventDefault();
-			list.slideToggle(200);
-		});
-		list.find('li').click(function () {
-			var text = $(this).html();
-			var icon = '<i class="fa fa-chevron-down"></i>';
-			link.html(text + icon);
-			list.slideToggle(200);
-			if (text === '* Reset') {
-				link.html('Select one option' + icon);
-			}
-		});
-	});
-});
+// $(document).ready(function () {
+// 	$(function () {
+// 		var list = $('.js-dropdown-list');
+// 		var link = $('.js-link');
+// 		link.click(function (e) {
+// 			e.preventDefault();
+// 			list.slideToggle(200);
+// 		});
+// 		list.find('li').click(function () {
+// 			var text = $(this).html();
+// 			var icon = '<i class="fa fa-chevron-down"></i>';
+// 			link.html(text + icon);
+// 			list.slideToggle(200);
+// 			if (text === '* Reset') {
+// 				link.html('Select one option' + icon);
+// 			}
+// 		});
+// 	});
+// });
 
 jQuery.noConflict();
 jQuery(document).ready(function ($) {
@@ -48,7 +48,7 @@ jQuery(document).ready(function ($) {
 		$navBarCollapse.slideToggle("fast");
 	});
 	$Btn.click(function () {
-		if ($(document).width() < 378) {
+		if ($(document).width() < 770) {
 			$navBarCollapse.slideToggle("fast");
 		}
 	});
@@ -82,7 +82,7 @@ jQuery(document).ready(function ($) {
 	});
 
 
-	if ($(document).width() < 378) {
+	if ($(document).width() < 770) {
 		$(".nav_btn").click(function () {
 			$(".hamburger").toggleClass("active");
 		});

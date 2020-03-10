@@ -200,7 +200,7 @@ a {
   transition: all .5s ease;
   position: relative;
   font-size: 14px;
-  color: #474747;
+  color: $black;
   text-align: left
 }
 .dropdown .select {
@@ -1052,6 +1052,9 @@ box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
 }	
 
 }
+
+
+
 //  Полезное 
 .useful {
 	margin-top: 100px;
@@ -1186,12 +1189,25 @@ font-size: 17px;
 		font-size: 16px;
 		font-family: $medium;
 		color:$gray;
-		text-align: center;
-
-		&_city {
-			padding-top: 5px;
-			color:$gray;
+		&_blocks {
+				margin-bottom: 40px;
 		}
+		&_special {
+			margin-right: 20px;
+		}
+		&_drop {
+			color:$gray;
+			width: 100%;
+			font-size: 16px;
+		}
+			.dropdown .select {
+				transform:translateY(3.5px);
+			}
+			.dropdown .dropdown-menu {
+    background-color: $gray-light;
+    border-radius: 3px;
+
+}
 		&_specialists {
 			padding-top: 5px;
 			a {
@@ -1218,6 +1234,11 @@ font-size: 17px;
 				
 			}
 		}
+
+		&_btns {
+			text-align: right;
+
+		}
 		&_btn-1 {
 			padding: 12px 25px;
 			background-color: transparent;
@@ -1234,9 +1255,10 @@ font-size: 17px;
 			color:white;
 			border:none;
 			border-radius:4px ;
-			margin-right: 10px;
+			// margin-l: 10px;
 			font-size: 16px;
 			font-family: $medium;
+			
 		}
 		&_info {
 			text-align-last: left;
@@ -1248,16 +1270,16 @@ font-size: 17px;
 				color:$gray;
 			}
 		}
-		&_social {
+		&_socials {
+			text-align: right;
 			padding-right:10px;
 		}
 		.info {
 			display: flex;
 			justify-content: flex-end;
 			border-top:1px solid $gray-light;
-			// margin-top: 30px;
 			padding-top: 25px;
-			// padding-bottom: 25px;
+			padding-bottom: 20px;
 		}
 	}
 	
@@ -1894,11 +1916,15 @@ input:checked + label {
 	}
 
 }
-@media (max-width: 378px) {
-	
+@media (max-width: 768px) {
+.boo-nav-city {
+	font-size: 20px;
+}
 	  .boo-nav-collapsed {
 			img {
-		padding-top: 20px;
+				margin-top: 25px;
+				width: 100%;
+				transform: translateY(3px);
 			}
 		}
 			.dropdown .select {
@@ -1920,7 +1946,8 @@ input:checked + label {
 .content {
   display: flex;
   justify-content: center;
-  align-items: center;
+	align-items: center;
+	padding-right: 20px;
 }
 
 .hamburger {
@@ -1935,7 +1962,8 @@ input:checked + label {
   height: 4px;
   width: 30px;
   background: #fff;
-  transition: all 0s 0.2s;
+	transition: all 0s 0.2s;
+
 }
 }
 
@@ -1985,11 +2013,11 @@ span:nth-child(4) {
   opacity: 0;
   transition: 0.2s 0s, opacity 0s 0.2s;
 }
-
+.boo-navbar-city
 .boo-navbar {
 	padding: 0 20px;
 	&-city {
-		font-size: 14px;
+		font-size: 20px;
 	}
 }
 .boo-nav-collapse {
@@ -2005,6 +2033,7 @@ span:nth-child(4) {
 	margin-bottom: 0px;
 	display: block;
 		margin-top: 30px;
+		text-align: center;
 }
 .btn_fill {
 	font-size: 18px;
@@ -2013,6 +2042,7 @@ span:nth-child(4) {
 	margin-left: 0px;
 	display: block;
 	margin-bottom: 40px;
+	text-align: center;
 
 }
 }
@@ -2134,6 +2164,7 @@ button {
 	padding-top: 120px;
   form.catalin input::-webkit-input-placeholder {
 		padding: 0px;
+		width: 100%;
 	}
 	input[type="text"]{
 		padding: 24px;
@@ -2144,7 +2175,7 @@ button {
 	margin-top: 50px;
 	margin-bottom:26px;
 	padding:0;
-	font-size: 26px;
+	// font-size: 26px;
 	line-height: 1.2;
 	width: 100%;
 }
@@ -2152,13 +2183,12 @@ form {
 	display: flex;
 	flex-direction: column;
 	margin-bottom: 100px;
-		width: 100%;
+	width: 100%;
 	
 }
 
   form.catalin input{
 		width: 100%;
-		max-width: 360px;
 		border-radius:6px;
 		
   }
@@ -2166,7 +2196,6 @@ form {
 		border-radius:6px;
     margin-top: 20px;
 		width: 100%;
-		// max-width:320px;
 		font-size: 18px;
   }
 }
@@ -2174,15 +2203,17 @@ form {
 	display: flex;
 	justify-content: center;
 &_blocks {
-		display: flex;
-	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	align-items:center;
 transform:translate(0, -80px);
 text-align: center;
 padding: 20px 0;
 border-radius:6px;
 background-color: white;
-margin: 20px;
+margin: 20px 0;
 z-index: 50;
+
 
 }
 
@@ -2193,7 +2224,7 @@ z-index: 50;
 	align-items: center;
 	padding: 40px 0px;
 	img {
-		width: 120px;
+		width:150px;
 	}
 }
 
@@ -2215,21 +2246,23 @@ z-index: 50;
 	margin: 0px;
 	border-bottom: none;
 	padding-bottom: 0px;
-	
 	color:$black;
 	.title {
 		margin:0px 0 40px 0 ;
-		padding: 0 20px;
-		
-			font-size: 30px;
+		padding: 0px;
+		font-size: 30px;
 		
 	}
-	&_block {
-		display: flex;
-		flex-direction: column;
+	&_blocks {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 		width: 100%;
-		max-width: 320px;
-		margin: 10px 20px;
+	}
+	&_block {
+margin: 0;
+width: 100%;
+	margin-top:20px;
 	}
 }
 .services{
@@ -2239,29 +2272,34 @@ z-index: 50;
 	}
 	margin-top: 40px;
 	&_block {
-			margin: 0px 20px;
+			// margin: 0px 20px;
 				padding:  0;
 						.all {
 		display: block;
 		color:$grin;
 		margin-bottom: 15px;
 	}
+	
 	}
 	.serv {
-				margin-bottom: 36px;
+	margin-bottom: 36px;
 	}
-}
+}     
 .useful {
+
+	&_blocks {
+			display: flex;
+			flex-direction: column;
+			align-items: start;
+	}
 	padding:0 20px;
 	&_img {
-		margin-top: 30px;
 		img {
 			width: 100%;
 		}
 	}
 		&_block {
-margin-top: 20px;
-
+			margin-top: 40px;
 	} 
 	&_button {
 	margin-top:35px;	
@@ -2272,10 +2310,10 @@ margin-top: 20px;
 
 	&_text{
 		font-size: 16px;
-		height: 55px;
+		height: 40px;
 	}
 	&_read{
-		font-size: 16px;
+		font-size: 16px
 
 	}
 }
@@ -2293,7 +2331,10 @@ margin-top: 20px;
 			font-size: 18px;
 		}
 	}
-
+	&_block {
+		display: flex;
+		flex-direction: column;
+	}
 	&_title {
 		margin-top: 20px;
 	}
@@ -2309,9 +2350,11 @@ margin-top: 20px;
 
 }
 .service {
-
+	&_text-1 { 
+	font-size: 16px;
+	}
 	padding: 40px 20px;
-		padding-bottom: 0;
+	padding-bottom: 0;
 	h2 {
 	font-size: 30px;
 	}
@@ -2331,8 +2374,12 @@ margin-top: 20px;
 		button {
 		margin-top: 30px;
 		}
+		&_blocks {
+			display: flex;
+			flex-direction: column;
+			margin-bottom: 0;
+		}
 				&_city {
-
 			margin-top: 20px;
 		}
 		&_specialists {
@@ -2347,6 +2394,10 @@ margin-top: 20px;
 		&_useful {
 			margin-top: 20px;
 		}
+				&_btns {
+			text-align: left;
+
+		}
 		&_btn-1 {
 			width: 30%;
 
@@ -2355,19 +2406,22 @@ margin-top: 20px;
 				width: 60%;
 
 		}
+		.info {
+			display: flex;
+			flex-direction: column;
+			justify-content: start;
+			padding-left: 0;
+			padding-bottom: 0px;
+			
+		}
 		&_info {
 			text-align: left;
 			font-size: 16px;
-
+			width: 50%;
 		}
-		&_social {
+		&_socials {
 			text-align: left;
-			margin-top: 5px;
-		}
-		.info {
-			justify-content: start;
-			padding-bottom: 30px;
-			padding-left: 0;
+			margin-top: 5px;	
 		}
 	}
 }
