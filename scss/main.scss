@@ -1289,7 +1289,7 @@ font-size: 17px;
 
 
 
-/* Экрна юристы */
+/* Экрн юристы */
 //  форма
 	.form {
 background-color: #F7F7F7;
@@ -1481,7 +1481,6 @@ li {
 	}
 	&_sort {
 		margin-top: 20px;
-		margin-left: 20px;
 		font-size: 18px;
 		font-family: $regular;
 		color:$black;
@@ -1499,11 +1498,11 @@ li {
 // Карточки юристов кнопка
 .lawyer_btn {
 	display: flex;
-	justify-content: center ; 
+	justify-content: center;
+	align-items: center; 
 	margin-bottom: 80px;
 	button {
-		height: 70px;
-		width: 360px;
+		padding: 20px 80px;
 		background-color: transparent;
 		border:1px solid $grin;
 		border-radius: 6px;
@@ -1517,14 +1516,24 @@ li {
 }
 // Регистрация
 .register {
+	&_block {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	}
+
 	background-color: #F8F8FE;
 	padding-top: 80px;
-	text-align: center;
+
 	font-family: $medium;
 	color:$black;
 	&_title {
 		font-size: 30px;
-		line-height: 1.5
+		line-height: 1.5;
+		padding: 0 140px;;
+		
 	}
 	&_conditions {
 		margin-top: 16px;
@@ -1550,7 +1559,6 @@ li {
 	&_already {
 		margin-top: 40px;
 		margin-bottom: 90px;
-		width: 580px;
 		background-color: #fff;
 		padding: 30px 40px;
 		border:1px solid #E0E0F8;
@@ -1944,9 +1952,7 @@ input:checked + label {
 		padding:0  10px;
 		transform:translate(110px,-26px); 
 }
-.dropdown .dropdown-menu { 
-    transform:translate(110px,-26px); 
-} 
+
 .boo-nav-collapsed .boo-nav-toggle {
 	transform:translate(10px,8px);
 }
@@ -1974,14 +1980,11 @@ input:checked + label {
   width: 30px;
   background: #fff;
 	transition: all 0s 0.2s;
-
 }
-}
-
 
 span:nth-child(1) {
+	left: 7px;
   top: 9px;
-  left: 7px;
   transition: 0.2s 0.2s, opacity 0s 0.2s;
 }
 
@@ -2003,7 +2006,11 @@ span:nth-child(4) {
   transition: 0.2s 0.2s, opacity 0s 0.2s;
 }
 
+}
+
+
 .hamburger.active span:nth-child(1) {
+	left: 7px;
   top: 18px;
   opacity: 0;
   transition: 0.2s 0s, opacity 0s 0.2s;
@@ -2280,8 +2287,7 @@ width: 100%;
 		margin-bottom: 0px;
 	} 
 }
-
-	.lawyer_button {
+.lawyer_button {
 		width: 80%;
 }
 .lawyer {
@@ -2619,6 +2625,112 @@ margin-top: 25px;
 			margin-top: 5px;	
 		}
 }
+
+/*Юристы*/
+	.form {
+		background-color: #F7F7F7;
+  form.catalin input{
+    width:100%;
+    border-radius: 6px;
+  }
+  form.catalin button{
+		border-radius:6px;
+		width: 100%;
+		margin-top:10px;
+  }
+}
+.title {
+	background-color: #F7F7F7;
+	margin: 0;
+	padding-top: 20px;
+}
+.head {
+	&_title {
+		h4 {
+			font-size: 40px;
+			max-width: 450px;
+		}
+	}
+	&_sort {
+		margin-top: 10px;
+		padding-bottom: 0;
+	}
+}
+.yurists {
+.dropdown {
+	margin: 15px auto;
+	height:auto;
+	}
+	a {
+	padding: 15px;
+}
+	.select-wrapper {
+	.select{
+	margin-top: 10px;
+	&-rating {
+	width: 25%;
+	}
+	&-reviews {
+		width:45%;
+	}
+	&-consultation {
+		margin-top: 10px;
+		margin-left: 20px;
+		width: 70%;
+	}
+
+	
+	}
+}
+}
+.low_2 {
+.lawyer_btn {
+	margin-top: 20px;
+	display: block;
+	padding: 0;
+	margin-bottom: 60px;
+	button {
+		height: 70px;
+		background-color:$grin;
+		border:none;
+		border-radius: 6px;
+		color:white;
+		width: 80%;
+	}
+	img {
+		display: none;
+
+	}
+}
+}
+.register {
+	padding-top: 60px;
+	&_title {
+		font-size: 18px;
+		padding: 0 140px;;
+		
+	}
+	&_conditions {
+		font-size: 16px;
+	}
+	&_btn {
+		button {
+		margin-top: 20px;
+		}
+
+	}
+	&_already {
+		margin-top: 40px;
+		&-title {
+			font-size: 18px;
+		}
+		&-text {
+			padding-top: 10px;
+			font-size: 16px;
+		}
+	}
+}
+
 }
 @media (max-width:670px) {
 .main {
@@ -2641,6 +2753,33 @@ margin-top: 25px;
 	}
 .boo-nav-city {
 	font-size: 14px;
+}
+.register {
+	padding-top: 60px;
+	&_title {
+		font-size: 18px;
+		padding: 0 20px;;
+		
+	}
+	&_conditions {
+		font-size: 16px;
+	}
+	&_btn {
+		button {
+		margin-top: 20px;
+		}
+
+	}
+	&_already {
+		margin-top: 40px;
+		&-title {
+			font-size: 18px;
+		}
+		&-text {
+			padding-top: 10px;
+			font-size: 16px;
+		}
+	}
 }
 }
 @media (max-width: 578px) {
@@ -2699,13 +2838,45 @@ padding: 0;
 }
 }
 @media (max-width: 575px) {
-			.lawyer_button {
+	.form {
+		padding: 0 20px;
+	}
+	.head {
+		padding: 0 20px;
+	}
+	.low_2 {
+		padding: 0 20px;
+	}
+.lawyer_button {
 			margin: 30px 0px;
-		}
+	}
 	.lawyers {
 		margin: 0 20px;
 
 	}
+	.head_sort {
+		padding-left: 0;
+	}
+	.yurists {
+		
+	.select-wrapper {
+	.select{
+		margin: 10px 0;
+	&-rating {
+	width: 18%;
+	margin-right: 15px;
+	}
+	&-reviews {
+		width:30%;
+	}
+	&-consultation {
+		display: block;
+		margin: 0;
+		width: 47%;
+	}
+	}
+}
+}
 }
 @media (max-width:480px) {
 .special {
@@ -2777,6 +2948,44 @@ font-size: 13px;
 			font-size: 18px;
 		}
 }
+}
+.low_2 {
+.lawyer_btn {
+	button {
+		width:100%;
+	}
+}
+}
+	.yurists {
+	.select-wrapper {
+	.select{
+	&-rating {
+	width: 25%;
+	margin-right: 15px;
+	}
+	&-reviews {
+		width:42%;
+	}
+	&-consultation {
+		display: block;
+		width: 65%;
+	}
+	}
+}
+	}
+	.head_title h4 {
+		font-size: 30px;
+	}
+.register {
+	&_conditions {
+		padding: 10px 50px;
+	}
+	&_already {
+		padding: 30px 15px;
+	}
+		&_btn {
+			width: 100%;
+	}
 }
 }
 @media (max-width:360px) {
@@ -2858,6 +3067,12 @@ font-size: 10px;
 	&_text {
 		font-size: 14px;
 		height: 50px;
+	}
+}
+.register {
+
+	&_already {
+		padding: 30px 5px;
 	}
 }
 }

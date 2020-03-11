@@ -1468,7 +1468,7 @@ h4 {
   padding-bottom: 20px;
 }
 
-/* Экрна юристы */
+/* Экрн юристы */
 .form {
   background-color: #F7F7F7;
 }
@@ -1681,7 +1681,6 @@ h4 {
 
 .head_sort {
   margin-top: 20px;
-  margin-left: 20px;
   font-size: 18px;
   font-family: "Proxima Nova Regular", sans-serif;
   color: #161737;
@@ -1705,12 +1704,14 @@ h4 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 80px;
 }
 
 .lawyer_btn button {
-  height: 70px;
-  width: 360px;
+  padding: 20px 80px;
   background-color: transparent;
   border: 1px solid #10A578;
   border-radius: 6px;
@@ -1726,14 +1727,31 @@ h4 {
 .register {
   background-color: #F8F8FE;
   padding-top: 80px;
-  text-align: center;
   font-family: "Proxima Nova Semibold", sans-serif;
   color: #161737;
+}
+
+.register_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
 }
 
 .register_title {
   font-size: 30px;
   line-height: 1.5;
+  padding: 0 140px;
 }
 
 .register_conditions {
@@ -1760,7 +1778,6 @@ h4 {
 .register_already {
   margin-top: 40px;
   margin-bottom: 90px;
-  width: 580px;
   background-color: #fff;
   padding: 30px 40px;
   border: 1px solid #E0E0F8;
@@ -2197,10 +2214,6 @@ h4 {
     -webkit-transform: translate(110px, -26px);
             transform: translate(110px, -26px);
   }
-  .dropdown .dropdown-menu {
-    -webkit-transform: translate(110px, -26px);
-            transform: translate(110px, -26px);
-  }
   .boo-nav-collapsed .boo-nav-toggle {
     -webkit-transform: translate(10px, 8px);
             transform: translate(10px, 8px);
@@ -2237,31 +2250,32 @@ h4 {
     -webkit-transition: all 0s 0.2s;
     transition: all 0s 0.2s;
   }
-  span:nth-child(1) {
-    top: 9px;
+  .hamburger span:nth-child(1) {
     left: 7px;
+    top: 9px;
     -webkit-transition: 0.2s 0.2s, opacity 0s 0.2s;
     transition: 0.2s 0.2s, opacity 0s 0.2s;
   }
-  span:nth-child(2) {
+  .hamburger span:nth-child(2) {
     top: 18px;
     left: 7px;
     -webkit-transition: 0.2s 0s;
     transition: 0.2s 0s;
   }
-  span:nth-child(3) {
+  .hamburger span:nth-child(3) {
     top: 18px;
     left: 7px;
     -webkit-transition: 0.2s 0s;
     transition: 0.2s 0s;
   }
-  span:nth-child(4) {
+  .hamburger span:nth-child(4) {
     top: 27px;
     left: 7px;
     -webkit-transition: 0.2s 0.2s, opacity 0s 0.2s;
     transition: 0.2s 0.2s, opacity 0s 0.2s;
   }
   .hamburger.active span:nth-child(1) {
+    left: 7px;
     top: 18px;
     opacity: 0;
     -webkit-transition: 0.2s 0s, opacity 0s 0.2s;
@@ -2906,6 +2920,93 @@ h4 {
     text-align: left;
     margin-top: 5px;
   }
+  /*Юристы*/
+  .form {
+    background-color: #F7F7F7;
+  }
+  .form form.catalin input {
+    width: 100%;
+    border-radius: 6px;
+  }
+  .form form.catalin button {
+    border-radius: 6px;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .title {
+    background-color: #F7F7F7;
+    margin: 0;
+    padding-top: 20px;
+  }
+  .head_title h4 {
+    font-size: 40px;
+    max-width: 450px;
+  }
+  .head_sort {
+    margin-top: 10px;
+    padding-bottom: 0;
+  }
+  .yurists .dropdown {
+    margin: 15px auto;
+    height: auto;
+  }
+  .yurists a {
+    padding: 15px;
+  }
+  .yurists .select-wrapper .select {
+    margin-top: 10px;
+  }
+  .yurists .select-wrapper .select-rating {
+    width: 25%;
+  }
+  .yurists .select-wrapper .select-reviews {
+    width: 45%;
+  }
+  .yurists .select-wrapper .select-consultation {
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 70%;
+  }
+  .low_2 .lawyer_btn {
+    margin-top: 20px;
+    display: block;
+    padding: 0;
+    margin-bottom: 60px;
+  }
+  .low_2 .lawyer_btn button {
+    height: 70px;
+    background-color: #10A578;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    width: 80%;
+  }
+  .low_2 .lawyer_btn img {
+    display: none;
+  }
+  .register {
+    padding-top: 60px;
+  }
+  .register_title {
+    font-size: 18px;
+    padding: 0 140px;
+  }
+  .register_conditions {
+    font-size: 16px;
+  }
+  .register_btn button {
+    margin-top: 20px;
+  }
+  .register_already {
+    margin-top: 40px;
+  }
+  .register_already-title {
+    font-size: 18px;
+  }
+  .register_already-text {
+    padding-top: 10px;
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 670px) {
@@ -2927,6 +3028,29 @@ h4 {
   }
   .boo-nav-city {
     font-size: 14px;
+  }
+  .register {
+    padding-top: 60px;
+  }
+  .register_title {
+    font-size: 18px;
+    padding: 0 20px;
+  }
+  .register_conditions {
+    font-size: 16px;
+  }
+  .register_btn button {
+    margin-top: 20px;
+  }
+  .register_already {
+    margin-top: 40px;
+  }
+  .register_already-title {
+    font-size: 18px;
+  }
+  .register_already-text {
+    padding-top: 10px;
+    font-size: 16px;
   }
 }
 
@@ -2980,11 +3104,38 @@ h4 {
 }
 
 @media (max-width: 575px) {
+  .form {
+    padding: 0 20px;
+  }
+  .head {
+    padding: 0 20px;
+  }
+  .low_2 {
+    padding: 0 20px;
+  }
   .lawyer_button {
     margin: 30px 0px;
   }
   .lawyers {
     margin: 0 20px;
+  }
+  .head_sort {
+    padding-left: 0;
+  }
+  .yurists .select-wrapper .select {
+    margin: 10px 0;
+  }
+  .yurists .select-wrapper .select-rating {
+    width: 18%;
+    margin-right: 15px;
+  }
+  .yurists .select-wrapper .select-reviews {
+    width: 30%;
+  }
+  .yurists .select-wrapper .select-consultation {
+    display: block;
+    margin: 0;
+    width: 47%;
   }
 }
 
@@ -3049,6 +3200,32 @@ h4 {
   .lawyers_whtasapp .whtasapp {
     padding: 20px;
     font-size: 18px;
+  }
+  .low_2 .lawyer_btn button {
+    width: 100%;
+  }
+  .yurists .select-wrapper .select-rating {
+    width: 25%;
+    margin-right: 15px;
+  }
+  .yurists .select-wrapper .select-reviews {
+    width: 42%;
+  }
+  .yurists .select-wrapper .select-consultation {
+    display: block;
+    width: 65%;
+  }
+  .head_title h4 {
+    font-size: 30px;
+  }
+  .register_conditions {
+    padding: 10px 50px;
+  }
+  .register_already {
+    padding: 30px 15px;
+  }
+  .register_btn {
+    width: 100%;
   }
 }
 
@@ -3116,6 +3293,9 @@ h4 {
   .useful_text {
     font-size: 14px;
     height: 50px;
+  }
+  .register_already {
+    padding: 30px 5px;
   }
 }
 /*# sourceMappingURL=main.css.map */
