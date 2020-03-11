@@ -1008,6 +1008,10 @@ h4 {
   color: #8c8da4;
 }
 
+.lawyers_mobile {
+  display: none;
+}
+
 .lawyers .title {
   border: none;
   margin-top: 80px;
@@ -1200,7 +1204,7 @@ h4 {
   border-radius: 6px;
   background-color: #10A578;
   padding: 24px;
-  width: 270px;
+  width: 100%;
   border: none;
   margin-top: 20px;
 }
@@ -2537,7 +2541,199 @@ h4 {
     width: 100%;
     margin-top: 20px;
   }
+  .lawyers .title {
+    font-size: 30px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .lawyer_button {
+    width: 80%;
+  }
+  .lawyer {
+    display: none;
+  }
+  .lawyers_mobile {
+    display: block;
+    font-family: "Proxima Nova Regular", sans-serif;
+    color: #161737;
+  }
+  .lawyers_mobile .card {
+    border-bottom: 1px solid #e7e8f4;
+    padding-bottom: 30px;
+    padding-top: 25px;
+  }
+  .lawyers_photo img {
+    width: 90%;
+  }
+  .lawyers_name {
+    font-size: 30px;
+  }
+  .lawyers_stars {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  .lawyers_stars img {
+    -webkit-transform: translateY(2px);
+            transform: translateY(2px);
+  }
+  .lawyers_rewyes {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  .lawyers_rewyes img {
+    -webkit-transform: translateY(3px);
+            transform: translateY(3px);
+    padding-right: 4px;
+  }
+  .lawyers_specialization {
+    font-size: 20px;
+    margin-top: 15px;
+  }
+  .lawyers_specialization img {
+    -webkit-transform: translateY(6px);
+            transform: translateY(6px);
+  }
+  .lawyers_uslugi {
+    margin-top: 10px;
+    width: 70%;
+  }
+  .lawyers_uslugi .spec {
+    padding: 6px;
+    background-color: #F8F8FE;
+    border-radius: 4px;
+    line-height: 2.5;
+    font-size: 18px;
+  }
+  .lawyers_adress {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  .lawyers_adress img {
+    -webkit-transform: translateY(3.5px);
+            transform: translateY(3.5px);
+  }
+  .lawyers_graphick {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  .lawyers_graphick img {
+    -webkit-transform: translateY(2.5px);
+            transform: translateY(2.5px);
+  }
+  .lawyers_week {
+    margin-top: 25px;
+  }
+  .lawyers_week .weekdays,
+  .lawyers_week .output {
+    padding: 10px;
+    border-radius: 4px;
+    font-family: "Proxima Nova Semibold", sans-serif;
+  }
+  .lawyers_week .weekdays {
+    border: 1px solid #10A578;
+    color: #10A578;
+  }
+  .lawyers_week .output {
+    border: 1px solid #e7e8f4;
+    color: #e7e8f4;
+  }
+  .lawyers_consultation {
+    width: 80%;
+  }
+  .lawyers_consultation .yes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #10A578;
+    font-family: "Proxima Nova Semibold", sans-serif;
+    margin-top: 25px;
+    border-radius: 6px;
+    background-color: #E3F8E9;
+    padding: 10px 30px 10px 30px;
+    font-size: 18px;
+  }
+  .lawyers_consultation .yes span {
+    padding: 10px 22px;
+    border-radius: 4px;
+    background-color: #10A578;
+    color: white;
+  }
+  .lawyers_consultation .no {
+    font-size: 18px;
+    font-family: "Proxima Nova Regular", sans-serif;
+    margin-top: 30px;
+    color: #161737;
+    margin-bottom: 20px;
+  }
+  .lawyers_consultation .no span {
+    border-radius: 4px;
+    margin-left: 5px;
+    color: #8c8da4;
+    padding: 5px 10px;
+    border-radius: 4px;
+    background-color: #F8F8FE;
+  }
+  .lawyers_phone {
+    width: 80%;
+  }
+  .lawyers_phone .phone {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 10px;
+    text-align: center;
+    border-radius: 6px;
+    background-color: #F8F8FE;
+    padding: 25px 30px 25px 30px;
+    color: #161737;
+    font-size: 20px;
+  }
+  .lawyers_phone .phone button {
+    font-size: 17px;
+    color: #10A578;
+    font-family: "Proxima Nova Semibold", sans-serif;
+    background-color: transparent;
+    border: none;
+  }
+  .lawyers_whtasapp {
+    width: 80%;
+  }
+  .lawyers_whtasapp .whtasapp {
+    font-size: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 10px;
+    border-radius: 6px;
+    border: 1px solid #10A578;
+    background-color: transparent;
+    padding: 25px;
+  }
+  .lawyers_whtasapp .whtasapp-text {
+    color: #10A578;
+    font-family: "Proxima Nova Semibold", sans-serif;
+    font-size: 20px;
+  }
   .services {
+    border: none;
     padding-bottom: 0;
     margin-top: 40px;
   }
@@ -2556,6 +2752,7 @@ h4 {
     margin-bottom: 36px;
   }
   .useful {
+    margin-top: 80px;
     padding: 0 20px;
   }
   .useful_blocks {
@@ -2733,7 +2930,7 @@ h4 {
   }
 }
 
-@media (max-width: 575px) {
+@media (max-width: 578px) {
   .factodes {
     background-color: #fff;
     margin: 0 20px;
@@ -2760,6 +2957,18 @@ h4 {
   .services_block {
     margin: 0;
   }
+  .lawyers_uslugi {
+    width: 100%;
+  }
+  .lawyers_consultation .cons {
+    padding-right: 10px;
+  }
+  .lawyers_phone {
+    width: 80%;
+  }
+  .lawyers_phone .phone {
+    padding-right: 20px;
+  }
   .useful .title {
     font-size: 30px;
     margin-bottom: 0px;
@@ -2770,15 +2979,112 @@ h4 {
   }
 }
 
-@media (max-width: 480px) {
-  .useful_text {
-    height: 50px;
+@media (max-width: 575px) {
+  .lawyer_button {
+    margin: 30px 0px;
+  }
+  .lawyers {
+    margin: 0 20px;
   }
 }
 
 @media (max-width: 480px) {
+  .special .title {
+    margin-bottom: 0;
+  }
+  .lawyer_button {
+    width: 100%;
+  }
   .useful_text {
     height: 60px;
+  }
+  .lawyers_name {
+    font-size: 18px;
+  }
+  .lawyers_specialization {
+    font-size: 16px;
+  }
+  .lawyers_stars, .lawyers_rewyes {
+    font-size: 15px;
+  }
+  .lawyers_uslugi .spec {
+    font-size: 14px;
+  }
+  .lawyers_adress {
+    font-size: 16px;
+  }
+  .lawyers_graphick {
+    font-size: 16px;
+  }
+  .lawyers_week {
+    font-size: 13px;
+  }
+  .lawyers_consultation {
+    width: 100%;
+  }
+  .lawyers_consultation .yes {
+    padding-right: 10px;
+    font-size: 15px;
+  }
+  .lawyers_consultation .yes span {
+    font-size: 16px;
+  }
+  .lawyers_consultation .no {
+    font-size: 15px;
+  }
+  .lawyers_phone {
+    width: 100%;
+  }
+  .lawyers_phone .phone {
+    padding: 20px;
+    padding-right: 20px;
+    font-size: 18px;
+  }
+  .lawyers_phone .phone button {
+    font-size: 15px;
+  }
+  .lawyers_whtasapp {
+    width: 100%;
+  }
+  .lawyers_whtasapp .whtasapp {
+    padding: 20px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 360px) {
+  .lawyers_week {
+    margin-top: 25px;
+  }
+  .lawyers_week .weekdays,
+  .lawyers_week .output {
+    font-size: 14px;
+    padding: 5px;
+  }
+  .lawyers_consultation .yes {
+    font-size: 14px;
+  }
+  .lawyers_consultation .yes span {
+    font-size: 14px;
+    padding: 5px;
+    padding-right: 10px;
+  }
+  .lawyers_consultation .no {
+    font-size: 14px;
+  }
+  .lawyers_phone .phone {
+    padding: 15px;
+    font-size: 14px;
+  }
+  .lawyers_phone .phone button {
+    font-size: 14px;
+  }
+  .lawyers_whtasapp .whtasapp {
+    font-size: 14px;
+    padding: 10px;
+  }
+  .lawyers_whtasapp .whtasapp-text {
+    font-size: 14px;
   }
 }
 

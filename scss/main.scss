@@ -884,6 +884,9 @@ box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
 
 // Более 120 юристов
 .lawyers {
+	&_mobile {
+		display: none;
+	}
 			.title {
 		border:none;
 		margin-top: 80px;
@@ -897,7 +900,6 @@ box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
 	margin-bottom: 20px;
 	color:$black;
 
-	
 	&_block {
 		border:1px solid $gray-light;
 		border-radius:6px;
@@ -1045,7 +1047,7 @@ box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
 	border-radius: 6px;
 	background-color: $grin;
 	padding: 24px;
-	width: 270px;
+	width: 100%;
 	border:none;
 	margin-top: 20px;
 
@@ -2271,7 +2273,186 @@ width: 100%;
 	margin-top:20px;
 	}
 }
+.lawyers {
+	.title {
+		font-size: 30px;
+		margin-top: 0px;
+		margin-bottom: 0px;
+	} 
+}
+
+	.lawyer_button {
+		width: 80%;
+}
+.lawyer {
+	display: none;
+}
+.lawyers{
+
+&_mobile {
+	display: block;
+	font-family: $regular;
+	color:$black;
+	.card {
+	border-bottom:1px solid $gray-light;
+	padding-bottom: 30px;
+	padding-top: 25px	;
+	}
+}
+
+&_photo {
+	img{
+		width:90%;
+	}
+}
+&_name {
+	font-size:30px;
+}
+&_stars {
+	font-size: 20px;
+	margin-top: 10px;
+	img {
+		transform: translateY(2px);
+	}
+}
+&_rewyes {
+	font-size: 20px;
+	margin-top: 10px;
+	img {
+		transform: translateY(3px);
+		padding-right: 4px;
+	}
+}
+&_specialization {
+	font-size: 20px;
+	margin-top: 15px;
+	img {
+		transform: translateY(6px);
+	}
+}
+&_uslugi{
+	margin-top: 10px;
+	width: 70%;
+	.spec {
+		padding: 6px;
+		background-color: #F8F8FE;
+		border-radius:4px;
+		line-height: 2.5;
+		font-size: 18px;	
+	}
+}
+&_adress {
+	margin-top: 20px;
+	font-size: 20px;
+	img {
+		transform: translateY(3.5px);
+	}
+}
+&_graphick {
+		margin-top: 20px;
+	font-size: 20px;
+	img {
+		transform: translateY(2.5px);
+	}
+}
+&_week {
+margin-top: 25px;
+.weekdays,
+.output {
+	padding: 10px;
+	border-radius:4px;
+	font-family: $medium;
+}
+.weekdays {
+	border:1px solid $grin;
+	color:$grin;
+}
+.output {
+	border:1px solid $gray-light;
+	color:$gray-light;
+}
+}
+&_consultation {
+	width: 80%;
+.yes {
+	display: flex;
+	justify-content: space-between;
+	align-items:center;
+	color:$grin;
+	font-family: $medium;
+	margin-top: 25px;
+	border-radius:6px;
+	background-color: #E3F8E9;
+	padding: 10px 30px 10px 30px;
+	font-size: 18px;
+	span {
+		padding: 10px 22px;
+		border-radius:4px;
+	background-color: $grin;
+	color:white;
+	}
+}
+.no {
+	font-size: 18px;
+	font-family: $regular;
+	margin-top: 30px;
+	color:$black;
+	margin-bottom: 20px;
+	span {
+		border-radius: 4px;
+		margin-left: 5px;
+	color:$gray;
+	padding: 5px 10px;
+	border-radius:4px;
+	background-color: #F8F8FE;
+	}
+}
+}
+&_phone {
+	width: 80%;
+	.phone {
+	display: flex;
+	justify-content: space-between;
+	align-items:center;
+		margin-top: 10px;
+		text-align: center;
+		border-radius: 6px;
+		background-color: #F8F8FE;
+		padding: 25px 30px 25px 30px;
+		color:$black;
+		font-size: 20px;	
+		button {
+			font-size: 17px;
+			color:$grin;
+			font-family: $medium;
+
+			background-color: transparent;
+			border:none;
+		}
+	}
+}
+&_whtasapp {
+	width: 80%;
+	.whtasapp {
+		font-size: 20px;	
+	display: flex;
+	justify-content: space-between; 
+	align-items:center;
+		margin-top: 10px;
+		border-radius: 6px;
+		border:1px solid $grin;
+		background-color: transparent;
+		padding: 25px;	
+		&-text {
+			color:$grin;
+			font-family: $medium;
+			font-size: 20px;
+		}
+	}
+}
+}
 .services{
+		border:none;
 	padding-bottom: 0;
 	.db  {
 		display: none;
@@ -2292,6 +2473,7 @@ width: 100%;
 	}
 }     
 .useful {
+	margin-top: 80px;
 	&_blocks {
 			display: flex;
 			flex-direction: column;
@@ -2374,7 +2556,7 @@ width: 100%;
 	width: 100%;
 	}
 }
-	.footer {
+.footer {
 		height: 100%;
 		padding-top: 40px;
 		font-size: 18px;
@@ -2436,7 +2618,7 @@ width: 100%;
 			text-align: left;
 			margin-top: 5px;	
 		}
-	}
+}
 }
 @media (max-width:670px) {
 .main {
@@ -2461,7 +2643,7 @@ width: 100%;
 	font-size: 14px;
 }
 }
-@media (max-width: 575px) {
+@media (max-width: 578px) {
 .factodes {
 	background-color: #fff;
 	margin: 0 20px;
@@ -2487,6 +2669,22 @@ padding: 0;
 		margin: 0;
 	}
 }
+.lawyers{
+	&_uslugi{
+	width: 100%;
+}
+	&_consultation {
+.cons {
+	padding-right: 10px;
+}
+}
+&_phone {
+	width: 80%;
+	.phone {
+		padding-right: 20px;
+	}	
+}
+}
 .useful {
 	.title {
 		font-size: 30px;
@@ -2500,23 +2698,130 @@ padding: 0;
 			}
 }
 }
-@media (max-width:480px) {
-.useful {
-    
-	&_text{
-		height: 50px;
+@media (max-width: 575px) {
+			.lawyer_button {
+			margin: 30px 0px;
+		}
+	.lawyers {
+		margin: 0 20px;
+
 	}
 }
-}
 @media (max-width:480px) {
+.special {
+	.title {
+		margin-bottom: 0; 
+	} 
+}
+.lawyer_button {
+width: 100%;
+}
 .useful {
-    
 	&_text{
 		height: 60px;
 	}
 }
+.lawyers{
+	&_name {
+	font-size:18px;
+}
+&_specialization {
+	font-size: 16px;
+}
+&_stars,
+&_rewyes {
+	font-size: 15px;
+}
+&_uslugi{
+	.spec {
+		font-size: 14px;	
+	}
+}
+&_adress {
+	font-size: 16px;
+}
+&_graphick {
+	font-size: 16px;
+}
+&_week {
+font-size: 13px;
+}
+&_consultation {
+	width: 100%;
+.yes {
+	padding-right: 10px;
+	font-size: 15px;
+	span {
+		font-size: 16px;
+	}
+}
+.no {
+	font-size: 15px;
+}
+}
+&_phone {
+	width: 100%;
+	.phone {
+		padding: 20px;
+		padding-right: 20px;
+		font-size: 18px;
+		button {
+			font-size: 15px;
+		}
+	}	
+}
+&_whtasapp {
+	width: 100%;
+		.whtasapp {
+			padding: 20px;
+			font-size: 18px;
+		}
+}
+}
 }
 @media (max-width:360px) {
+.lawyers{
+&_week {
+margin-top: 25px;
+.weekdays,
+.output {
+font-size: 14px;
+padding: 5px;
+}
+}
+&_consultation {
+.yes {
+	font-size: 14px;
+	span {
+font-size: 14px;
+padding: 5px;
+padding-right: 10px;
+	}
+}
+.no {
+	font-size: 14px;
+}
+}
+&_phone {
+	.phone {
+		padding: 15px;
+		font-size: 14px;	
+		button {
+			font-size: 14px;
+		}
+	}
+}
+&_whtasapp {
+	.whtasapp {
+		font-size: 14px;	
+		padding: 10px;
+	
+		&-text {
+			font-size: 14px;
+		}
+	}
+}
+}
 
 }
 @media (max-width:320px) {
