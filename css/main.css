@@ -849,7 +849,7 @@ h4 {
   width: 174px;
   height: 70px;
   cursor: pointer;
-  text-transform: uppercase;
+  text-transform: lowercase;
   text-align: center;
   color: white;
   font-family: "Proxima Nova Semibold", sans-serif;
@@ -1898,8 +1898,17 @@ h4 {
   text-align: center;
 }
 
+.similar_image img {
+  display: block;
+  margin: 0 auto;
+}
+
 .similar_title {
   text-align: left;
+}
+
+.similar_title h4 {
+  margin-bottom: 30px;
 }
 
 .similar_block {
@@ -1911,24 +1920,59 @@ h4 {
 .similar_name {
   margin-top: 22px;
   font-size: 18px;
+  height: 35px;
+  padding: 0 30px;
 }
 
 .similar_star {
   margin-top: 15px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 .similar_star img {
-  -webkit-transform: translateY(2px);
-          transform: translateY(2px);
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
+  padding-right: 5px;
 }
 
 .similar_review {
-  margin-top: 10px;
+  margin-top: 5px;
+}
+
+.similar_review span {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 .similar_review img {
   -webkit-transform: translateY(2px);
           transform: translateY(2px);
+}
+
+.arrow {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  position: absolute;
+  z-index: 99;
+  width: 40px;
+  height: 40px;
+  border: none;
+}
+
+.prev {
+  left: 0;
+  background: url(../image/Lawyers/icon/ArrowLeft.svg) center no-repeat;
+  background-size: 100%;
+}
+
+.next {
+  right: 0;
+  background: url(../image/Lawyers/icon/ArrowRight.svg) center no-repeat;
+  background-size: 100%;
 }
 
 /*Третий экран Компании*/
@@ -2560,7 +2604,7 @@ h4 {
     margin-top: 0px;
     margin-bottom: 0px;
   }
-  .lawyer_button {
+  .lawyer_button, .lawyer_btn {
     width: 80%;
   }
   .lawyer {
@@ -2582,6 +2626,9 @@ h4 {
   .lawyers_name {
     font-size: 30px;
   }
+  .lawyers_name a {
+    color: #161737;
+  }
   .lawyers_stars {
     font-size: 20px;
     margin-top: 10px;
@@ -2598,6 +2645,9 @@ h4 {
     -webkit-transform: translateY(3px);
             transform: translateY(3px);
     padding-right: 4px;
+  }
+  .lawyers_rewyes a {
+    color: #161737;
   }
   .lawyers_specialization {
     font-size: 20px;
@@ -2967,21 +3017,21 @@ h4 {
     margin-left: 20px;
     width: 70%;
   }
-  .low_2 .lawyer_btn {
+  .lawyer_btn {
     margin-top: 20px;
     display: block;
     padding: 0;
     margin-bottom: 60px;
   }
-  .low_2 .lawyer_btn button {
+  .lawyer_btn button {
     height: 70px;
     background-color: #10A578;
     border: none;
     border-radius: 6px;
     color: white;
-    width: 80%;
+    width: 100%;
   }
-  .low_2 .lawyer_btn img {
+  .lawyer_btn img {
     display: none;
   }
   .register {
@@ -3006,6 +3056,12 @@ h4 {
   .register_already-text {
     padding-top: 10px;
     font-size: 16px;
+  }
+  .similar {
+    padding: 0 20px;
+  }
+  .similar_image img {
+    width: 50%;
   }
 }
 
@@ -3113,8 +3169,9 @@ h4 {
   .low_2 {
     padding: 0 20px;
   }
-  .lawyer_button {
+  .lawyer_button, .lawyer_btn {
     margin: 30px 0px;
+    width: 100%;
   }
   .lawyers {
     margin: 0 20px;
@@ -3137,13 +3194,29 @@ h4 {
     margin: 0;
     width: 47%;
   }
+  .firms {
+    padding: 0 20px;
+  }
+  .about {
+    padding: 0 20px;
+  }
+  .review {
+    padding: 0 20px;
+    padding-top: 20px;
+  }
+  .review h4 {
+    font-size: 30px;
+  }
+  .similar h4 {
+    font-size: 30px;
+  }
 }
 
 @media (max-width: 480px) {
   .special .title {
     margin-bottom: 0;
   }
-  .lawyer_button {
+  .lawyer_button, .lawyer_btn {
     width: 100%;
   }
   .useful_text {
@@ -3217,6 +3290,9 @@ h4 {
   }
   .head_title h4 {
     font-size: 30px;
+  }
+  .register {
+    padding: 60px 20px 0 20px;
   }
   .register_conditions {
     padding: 10px 50px;
@@ -3294,8 +3370,18 @@ h4 {
     font-size: 14px;
     height: 50px;
   }
+  .register_conditions {
+    padding: 10px 20px;
+  }
   .register_already {
     padding: 30px 5px;
+  }
+  .register_btn button {
+    padding: 10px;
+    max-width: 250px;
+  }
+  .lawyer_btn {
+    font-size: 14px;
   }
 }
 /*# sourceMappingURL=main.css.map */
