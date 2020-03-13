@@ -287,6 +287,8 @@ a {
 			height: 70px;
 			border:none;
 			margin-bottom: 40px;
+			border-radius: 6px;
+			cursor: pointer;
 			}
 		}
 		
@@ -435,6 +437,107 @@ input:checked + label {
 		}
 	}
 }
+
+
+
+
+.model2 {
+						.close {
+							cursor: pointer;
+				img {
+			transform: translate(570px,35px);
+				}
+			}
+  position: absolute; 
+  top:-2000px;
+  z-index:101;
+	width:600px;
+	min-height: 100%;
+		&_heder {
+		background-color: $grin;
+		height: 70px;
+		text-align: center;
+		font-family: $medium;
+
+		&-text {
+			padding: 20px;
+			font-size: 25px;
+			color:white;
+		}
+	}
+			&_type {
+			font-size: 20px;
+			color:$black;
+			margin-top: 30px;
+			font-family: $regular;
+		}
+		&_btn {
+			button {
+			background-color: $grin;
+			color:white;
+			font-size: 18px;
+			font-family: $medium;
+			width: 320px;
+			height: 70px;
+			border:none;
+			margin-bottom: 40px;
+			border-radius: 6px;
+			margin-top: 20px;
+			cursor: pointer;
+			
+			}
+		}
+form {
+	margin-top: 10px;
+	input {
+		display: block;
+		margin-top: 20px;
+		height: 70px;
+		width: 100%;
+		border-radius:6px;
+		border:1px solid $gray-light;
+		padding: 20px;
+	}
+}
+input::-webkit-input-placeholder {
+	 color: $gray; 
+	 font-family: $regular;
+	}
+
+&_section{
+	padding: 20px;
+}
+
+@media screen and (max-width: 650px) {
+  label {
+    font-size: 0;
+  }
+  label:before {
+    margin: 0;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  label {
+    padding: 15px;
+  }
+}
+
+}
+
+.model2 .constraint {
+	background:#fff;
+	text-align: center;
+	border-radius: 6px;
+	
+  // padding:20px;
+}
+
+
+
+
+
 
 .tabs {
   left: 50%;
@@ -957,7 +1060,7 @@ box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
 		margin-left: 20px;
 	}
 	.week {
-		transform:translateY(10px);
+		transform:translateY(11px);
 		margin-top: 15px;
 		display: inline-block;
 		margin-left: 50px;
@@ -1046,10 +1149,11 @@ box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
 	font-size: 18px;
 	border-radius: 6px;
 	background-color: $grin;
-	padding: 24px;
-	width: 100%;
+	padding: 20px;
+	width: 80%;
 	border:none;
 	margin-top: 20px;
+margin-bottom: 80px;
 
 }	
 
@@ -1073,9 +1177,9 @@ box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
 	border-radius: 6px;
 	background-color: transparent;
 	text-align: center;
-	padding: 24px;
-	width: 270px;
-	border:1px solid $gray-light;
+	padding: 20px;
+	width: 220px;
+	border:1px solid $grin;
 	margin-bottom: 80px;
 
 	}
@@ -1138,8 +1242,8 @@ box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
 	font-size: 18px;
 	border-radius: 6px;
 	background-color: $grin;
-	padding: 24px;
-	width: 270px;
+	padding: 20px 10px;
+	width: 240px;
 	border:none;
 
 }
@@ -1157,13 +1261,16 @@ box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
 		font-family: $medium;
 	color:$black;
 	font-size: 42px;
+	padding: 0;
 	}
 	&_text-1 {
+		text-align: justify;
 	font-family: $regular;
 color:$gray;
 font-size: 17px;
 	}
 	&_text-2 {
+		text-align: justify;
 		margin-top: 30px;
 	font-family: $regular;
 color:$gray;
@@ -1177,11 +1284,64 @@ font-size: 17px;
 	border-radius: 6px;
 	background-color: transparent;
 	text-align: center;
-	padding: 24px;
-	width: 270px;
-	border:1px solid $gray-light;
+	padding: 20px;
+	width: 220px;
+	border:1px solid $grin;
 	margin-bottom: 50px;
 	}
+	.spoiler {
+}
+
+.spoiler button {
+	margin-top: 50px;	
+	color:$grin;
+	font-family: $medium;
+	font-size: 18px;
+	border-radius: 6px;
+	background-color: transparent;
+	text-align: center;
+	padding: 20px;
+	width: 220px;
+	border:1px solid $grin;
+	margin-bottom: 50px;
+  transition: background 0.1s ease-in-out;
+}
+
+.spoiler button:hover, .spoiler button:focus {
+		background: $grin;
+		color:white;
+    outline: none;
+}
+
+.spoilerpanel {
+    text-align: left;
+    background: white;
+    border: 0px;
+}
+
+.spoilerpanel {
+	font-family: $regular;
+	color:$gray;
+	font-size: 17px;
+    padding: 0;
+		display: none;
+		text-align: justify;
+		padding-top: 20px;
+		.text-title {
+			font-family: $medium;
+			margin: 10px 0;
+		}
+			.text-subtitle {
+				line-height: 2;
+			}
+		.text {
+			margin: 20px 0;
+			line-height: 1.5;
+			&-2 {
+				margin: 15px;
+			}
+		}
+}
 }
 // footer
 	.footer {
@@ -1415,13 +1575,19 @@ li {
 	}
 }
 }
-
+.titles {
+	background-color: #fff;
+	// border-bottom:1px solid $gray-light;
+	margin-bottom: 45px;
+	padding-bottom: 45px;
+	margin-top: 17px;
+}
 
 
 // Юристы и адвокаты в Нур-Султане (Астана)
 .title {
 	background-color: #fff;
-		border-bottom:1px solid $gray-light;
+	border-bottom:1px solid $gray-light;
 	margin-bottom: 45px;
 	padding-bottom: 45px;
 	margin-top: 17px;
@@ -1486,6 +1652,13 @@ li {
 		color:$black;
 		padding: 10px;
 		padding-left: 20px;
+		width: 100%;
+		.select-wrapper {
+			.select-rating, .select-reviews  {
+				margin-right: 90px;
+			}
+	
+		}
 		&-info {
 			font-size: 16px;
 			img {
@@ -1736,133 +1909,79 @@ li {
 
 // Профиль
 .profile {
-	.hr {
-		border-bottom: 1px solid $gray-light;
-		margin-top: 40px;
-		padding-bottom: 40px;
-	}
-		&-section_btn{ 
-			display: flex;
-			justify-content: flex-end;
-		button {
-		margin-top: 30px;
-		color: white;
-    font-family: "Proxima Nova Semibold", sans-serif;
-    font-size: 18px;
-    border-radius: 6px;
-    background-color: $grin;
-    padding: 24px;
-		width: 320px;
-		height: 70px;
-    border: none;
+	&_heder {
+		.title {
+			border:none;
+			padding-bottom: 0;
 		}
 	}
-	.form_btn {
-		margin-top: 18px;
+	background-color: #fff;
+	&_block {
+		background-color: #fff;
+	}
+	margin-top: 35px;
+	font-family: $regular;
+	color:$black;
+	&_photo {
+		margin-right: 30px;
 		img {
-			transform: translateY(8px);
-		}
-		button {
-		background-color: transparent;
-		border:none;
-		font-size: 16px;
-		color:$grin;
-		font-family: $medium;
+			width: 100%;
 		}
 	}
-	.redacted {
+	.changePhoto {
+		text-align: center;
+		margin-top: 15px;
 		button {
-		background-color: transparent;
-		border:none;
-		font-size: 16px;
-		padding: 5px;
-		color:$grin;
-		font-family: $regular;
+			color:$grin;
+			background-color: transparent;
+			border-radius: 4px;
+			border:none;
+			font-size: 16px;
 		}
+	}
+	&_name {
+		font-size: 35px;
+		margin-bottom: 10px;
+	}
+	&_stars {
+		font-size: 15px;
+		margin-right: 10px;
+		img {
+			transform:translateY(2px);
+		}
+	}
+	&_review {
+		font-size: 15px;
+		img {
+			transform:translateY(2px);
+			padding-right: 5px;
+		}
+	}
+	&_spec {
+margin-top: 20px;
+line-height: 2;
+font-size: 14px;
+span 	{
+	padding: 2px 5px ;
+	background-color: #F8F8FE;
+	border-radius:4px;
+}
+div {
+	display: inline-block;
+}
 	}
 	&_btn {
-		display: inline-block;
 		button {
-		background-color: transparent;
-		border:1px solid $grin;
-		border-radius:4px; 
-		font-size: 14px;
-		padding: 5px;
-		color:$grin;
-		font-family: $medium;
+			color:$grin;
+			background-color: transparent;
+			border-radius: 4px;
+			border:1px solid $grin;
+			font-size: 14px;
+			font-family: $medium;
 		}
 	}
-.lawyer_block-photo {
-	text-align: center;
-img {
-	width: 135px;
-}
-}
-.title {
-	margin-bottom: 0;
-}
-&_form {
-	display: flex;
-	margin-top: 26px;
-	align-items:center;
-.name {
-	font-size: 18px;
-	color:$gray;
 
 }
-.input {
-	padding: 20px;
-}
-}
-form {
-	input, textarea{
-		width: 320px;
-		margin-left: 40px;
-		display: block;
-		padding: 20px;
-		border-radius:6px;
-		border:1px solid $gray-light;
-	}
-}
-main{
-	transform: translateY(-57px);
-	font-family: $regular;
-}
-section {
-  display: none;
-  padding-top: 20px;
-  border-top: 1px solid white;
-}
-
-input {
-  display: none;
-}
-
-label {
-  display: inline-block;
-  margin: 0 0 -1px;
-  padding: 15px 25px;
-	font-size: 20px;
-  text-align: center;
-  color: $black;
-  border: 1px solid transparent;
-}
-
-input:checked + label {
-  color: $black;
-  border: 1px solid transparent;
-  border-bottom: 3px solid $grin;
-  border-top: 1px solid #fff;
-}
-
-#tab1:checked ~ #content1,
-#tab2:checked ~ #content2,
-#tab3:checked ~ #content3,
-#tab4:checked ~ #content4 {
-  display: block;
-}
-}
-
 
 
 
@@ -1986,6 +2105,9 @@ input:checked + label {
 		padding:0  10px;
 		transform:translate(110px,-26px); 
 }
+.dropdown .dropdown-menu {
+	transform:translateX(110px);
+}
 
 .boo-nav-collapsed .boo-nav-toggle {
 	transform:translate(10px,8px);
@@ -2106,7 +2228,7 @@ span:nth-child(4) {
 #mask {
 	width:100%;
 }
-.model {
+.model , .model2 {
 	width: 320px;
 	.close {
 		img {
@@ -2201,6 +2323,17 @@ button {
 	display:inline-block;
 		}
 }
+.model2 {
+	form {
+		margin-top: 0;
+	}
+	.model_type {
+		margin-bottom: 0;
+	}
+	&_section {
+		padding-top: 0;
+	}
+}
 .model_socal {
 	&-text {
 		font-size: 18px;
@@ -2209,18 +2342,23 @@ button {
 		margin-top: 10px;
 	}
 }
-
+.head_sort {
+			.select-wrapper {
+			.select-rating, .select-reviews  {
+				margin-right: 0px;
+			}
+		}
+}
 .main {
-	background:url(../image/Mobile/main_img.png);
+	background:url(../image/Mobile/main_img.png) ;
 	padding: 20px;
 	padding-top: 120px;
   form.catalin input::-webkit-input-placeholder {
 		padding: 0px;
-		width: 100%;
+		// width: 100%;
 	}
 	input[type="text"]{
-		padding: 24px;
-		font-family: $regular;
+		padding: 20px;
 	
 	}
 	h1 {
@@ -2458,7 +2596,7 @@ margin-top: 25px;
 	width: 80%;
 	.phone {
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items:center;
 		margin-top: 10px;
 		text-align: center;
@@ -2468,6 +2606,7 @@ margin-top: 25px;
 		color:$black;
 		font-size: 20px;	
 		button {
+			margin-left: 5px;
 			font-size: 17px;
 			color:$grin;
 			font-family: $medium;
@@ -2505,12 +2644,21 @@ margin-top: 25px;
 	}
 	margin-top: 40px;
 	&_block {
-			// margin: 0px 20px;
+
 				padding:  0;
+				button {
+					background-color: transparent;
+					border:none;
+					font-size: 18px;
+					font-family: $regular;
+					padding: 0;
+					
+				}
 						.all {
 		display: block;
 		color:$grin;
 		margin-bottom: 15px;
+		cursor: pointer;
 	}
 	
 	}
@@ -2841,7 +2989,7 @@ margin-top: 25px;
 padding: 0;
 }
 &_block {
-	padding: 60px;
+	padding: 30px;
 }
 }
 .special {
@@ -2886,6 +3034,9 @@ padding: 0;
 }
 }
 @media (max-width: 575px) {
+	.main {
+		padding-top: 0;
+	}
 	.form {
 		padding: 0 20px;
 	}
@@ -2949,6 +3100,7 @@ padding: 0;
 
 }
 @media (max-width:480px) {
+
 .special {
 	.title {
 		margin-bottom: 0; 

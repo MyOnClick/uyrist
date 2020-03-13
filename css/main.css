@@ -332,6 +332,8 @@ a {
   height: 70px;
   border: none;
   margin-bottom: 40px;
+  border-radius: 6px;
+  cursor: pointer;
 }
 
 .model form {
@@ -488,6 +490,102 @@ a {
 
 .model_socal-icon a {
   padding-right: 20px;
+}
+
+.model2 {
+  position: absolute;
+  top: -2000px;
+  z-index: 101;
+  width: 600px;
+  min-height: 100%;
+}
+
+.model2 .close {
+  cursor: pointer;
+}
+
+.model2 .close img {
+  -webkit-transform: translate(570px, 35px);
+          transform: translate(570px, 35px);
+}
+
+.model2_heder {
+  background-color: #10A578;
+  height: 70px;
+  text-align: center;
+  font-family: "Proxima Nova Semibold", sans-serif;
+}
+
+.model2_heder-text {
+  padding: 20px;
+  font-size: 25px;
+  color: white;
+}
+
+.model2_type {
+  font-size: 20px;
+  color: #161737;
+  margin-top: 30px;
+  font-family: "Proxima Nova Regular", sans-serif;
+}
+
+.model2_btn button {
+  background-color: #10A578;
+  color: white;
+  font-size: 18px;
+  font-family: "Proxima Nova Semibold", sans-serif;
+  width: 320px;
+  height: 70px;
+  border: none;
+  margin-bottom: 40px;
+  border-radius: 6px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.model2 form {
+  margin-top: 10px;
+}
+
+.model2 form input {
+  display: block;
+  margin-top: 20px;
+  height: 70px;
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid #e7e8f4;
+  padding: 20px;
+}
+
+.model2 input::-webkit-input-placeholder {
+  color: #8c8da4;
+  font-family: "Proxima Nova Regular", sans-serif;
+}
+
+.model2_section {
+  padding: 20px;
+}
+
+@media screen and (max-width: 650px) {
+  .model2 label {
+    font-size: 0;
+  }
+  .model2 label:before {
+    margin: 0;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .model2 label {
+    padding: 15px;
+  }
+}
+
+.model2 .constraint {
+  background: #fff;
+  text-align: center;
+  border-radius: 6px;
 }
 
 .tabs {
@@ -1100,8 +1198,8 @@ h4 {
 }
 
 .lawyer_block-ingo .week {
-  -webkit-transform: translateY(10px);
-          transform: translateY(10px);
+  -webkit-transform: translateY(11px);
+          transform: translateY(11px);
   margin-top: 15px;
   display: inline-block;
   margin-left: 50px;
@@ -1203,10 +1301,11 @@ h4 {
   font-size: 18px;
   border-radius: 6px;
   background-color: #10A578;
-  padding: 24px;
-  width: 100%;
+  padding: 20px;
+  width: 80%;
   border: none;
   margin-top: 20px;
+  margin-bottom: 80px;
 }
 
 .useful {
@@ -1227,9 +1326,9 @@ h4 {
   border-radius: 6px;
   background-color: transparent;
   text-align: center;
-  padding: 24px;
-  width: 270px;
-  border: 1px solid #e7e8f4;
+  padding: 20px;
+  width: 220px;
+  border: 1px solid #10A578;
   margin-bottom: 80px;
 }
 
@@ -1300,8 +1399,8 @@ h4 {
   font-size: 18px;
   border-radius: 6px;
   background-color: #10A578;
-  padding: 24px;
-  width: 270px;
+  padding: 20px 10px;
+  width: 240px;
   border: none;
 }
 
@@ -1319,15 +1418,18 @@ h4 {
   font-family: "Proxima Nova Semibold", sans-serif;
   color: #161737;
   font-size: 42px;
+  padding: 0;
 }
 
 .service_text-1 {
+  text-align: justify;
   font-family: "Proxima Nova Regular", sans-serif;
   color: #8c8da4;
   font-size: 17px;
 }
 
 .service_text-2 {
+  text-align: justify;
   margin-top: 30px;
   font-family: "Proxima Nova Regular", sans-serif;
   color: #8c8da4;
@@ -1342,10 +1444,66 @@ h4 {
   border-radius: 6px;
   background-color: transparent;
   text-align: center;
-  padding: 24px;
-  width: 270px;
-  border: 1px solid #e7e8f4;
+  padding: 20px;
+  width: 220px;
+  border: 1px solid #10A578;
   margin-bottom: 50px;
+}
+
+.service .spoiler button {
+  margin-top: 50px;
+  color: #10A578;
+  font-family: "Proxima Nova Semibold", sans-serif;
+  font-size: 18px;
+  border-radius: 6px;
+  background-color: transparent;
+  text-align: center;
+  padding: 20px;
+  width: 220px;
+  border: 1px solid #10A578;
+  margin-bottom: 50px;
+  -webkit-transition: background 0.1s ease-in-out;
+  transition: background 0.1s ease-in-out;
+}
+
+.service .spoiler button:hover, .service .spoiler button:focus {
+  background: #10A578;
+  color: white;
+  outline: none;
+}
+
+.service .spoilerpanel {
+  text-align: left;
+  background: white;
+  border: 0px;
+}
+
+.service .spoilerpanel {
+  font-family: "Proxima Nova Regular", sans-serif;
+  color: #8c8da4;
+  font-size: 17px;
+  padding: 0;
+  display: none;
+  text-align: justify;
+  padding-top: 20px;
+}
+
+.service .spoilerpanel .text-title {
+  font-family: "Proxima Nova Semibold", sans-serif;
+  margin: 10px 0;
+}
+
+.service .spoilerpanel .text-subtitle {
+  line-height: 2;
+}
+
+.service .spoilerpanel .text {
+  margin: 20px 0;
+  line-height: 1.5;
+}
+
+.service .spoilerpanel .text-2 {
+  margin: 15px;
 }
 
 .footer {
@@ -1613,6 +1771,13 @@ h4 {
   width: 32%;
 }
 
+.titles {
+  background-color: #fff;
+  margin-bottom: 45px;
+  padding-bottom: 45px;
+  margin-top: 17px;
+}
+
 .title {
   background-color: #fff;
   border-bottom: 1px solid #e7e8f4;
@@ -1686,6 +1851,11 @@ h4 {
   color: #161737;
   padding: 10px;
   padding-left: 20px;
+  width: 100%;
+}
+
+.head_sort .select-wrapper .select-rating, .head_sort .select-wrapper .select-reviews {
+  margin-right: 90px;
 }
 
 .head_sort-info {
@@ -1980,152 +2150,91 @@ h4 {
   border-top: 5px solid #10A578;
 }
 
-.profile .hr {
-  border-bottom: 1px solid #e7e8f4;
-  margin-top: 40px;
-  padding-bottom: 40px;
-}
-
-.profile-section_btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-.profile-section_btn button {
-  margin-top: 30px;
-  color: white;
-  font-family: "Proxima Nova Semibold", sans-serif;
-  font-size: 18px;
-  border-radius: 6px;
-  background-color: #10A578;
-  padding: 24px;
-  width: 320px;
-  height: 70px;
-  border: none;
-}
-
-.profile .form_btn {
-  margin-top: 18px;
-}
-
-.profile .form_btn img {
-  -webkit-transform: translateY(8px);
-          transform: translateY(8px);
-}
-
-.profile .form_btn button {
-  background-color: transparent;
-  border: none;
-  font-size: 16px;
-  color: #10A578;
-  font-family: "Proxima Nova Semibold", sans-serif;
-}
-
-.profile .redacted button {
-  background-color: transparent;
-  border: none;
-  font-size: 16px;
-  padding: 5px;
-  color: #10A578;
+.profile {
+  background-color: #fff;
+  margin-top: 35px;
   font-family: "Proxima Nova Regular", sans-serif;
+  color: #161737;
 }
 
-.profile_btn {
+.profile_heder .title {
+  border: none;
+  padding-bottom: 0;
+}
+
+.profile_block {
+  background-color: #fff;
+}
+
+.profile_photo {
+  margin-right: 30px;
+}
+
+.profile_photo img {
+  width: 100%;
+}
+
+.profile .changePhoto {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.profile .changePhoto button {
+  color: #10A578;
+  background-color: transparent;
+  border-radius: 4px;
+  border: none;
+  font-size: 16px;
+}
+
+.profile_name {
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+
+.profile_stars {
+  font-size: 15px;
+  margin-right: 10px;
+}
+
+.profile_stars img {
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+}
+
+.profile_review {
+  font-size: 15px;
+}
+
+.profile_review img {
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+  padding-right: 5px;
+}
+
+.profile_spec {
+  margin-top: 20px;
+  line-height: 2;
+  font-size: 14px;
+}
+
+.profile_spec span {
+  padding: 2px 5px;
+  background-color: #F8F8FE;
+  border-radius: 4px;
+}
+
+.profile_spec div {
   display: inline-block;
 }
 
 .profile_btn button {
-  background-color: transparent;
-  border: 1px solid #10A578;
-  border-radius: 4px;
-  font-size: 14px;
-  padding: 5px;
   color: #10A578;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid #10A578;
+  font-size: 14px;
   font-family: "Proxima Nova Semibold", sans-serif;
-}
-
-.profile .lawyer_block-photo {
-  text-align: center;
-}
-
-.profile .lawyer_block-photo img {
-  width: 135px;
-}
-
-.profile .title {
-  margin-bottom: 0;
-}
-
-.profile_form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 26px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.profile_form .name {
-  font-size: 18px;
-  color: #8c8da4;
-}
-
-.profile_form .input {
-  padding: 20px;
-}
-
-.profile form input, .profile form textarea {
-  width: 320px;
-  margin-left: 40px;
-  display: block;
-  padding: 20px;
-  border-radius: 6px;
-  border: 1px solid #e7e8f4;
-}
-
-.profile main {
-  -webkit-transform: translateY(-57px);
-          transform: translateY(-57px);
-  font-family: "Proxima Nova Regular", sans-serif;
-}
-
-.profile section {
-  display: none;
-  padding-top: 20px;
-  border-top: 1px solid white;
-}
-
-.profile input {
-  display: none;
-}
-
-.profile label {
-  display: inline-block;
-  margin: 0 0 -1px;
-  padding: 15px 25px;
-  font-size: 20px;
-  text-align: center;
-  color: #161737;
-  border: 1px solid transparent;
-}
-
-.profile input:checked + label {
-  color: #161737;
-  border: 1px solid transparent;
-  border-bottom: 3px solid #10A578;
-  border-top: 1px solid #fff;
-}
-
-.profile #tab1:checked ~ #content1,
-.profile #tab2:checked ~ #content2,
-.profile #tab3:checked ~ #content3,
-.profile #tab4:checked ~ #content4 {
-  display: block;
 }
 
 @media screen and (max-width: 650px) {
@@ -2258,6 +2367,10 @@ h4 {
     -webkit-transform: translate(110px, -26px);
             transform: translate(110px, -26px);
   }
+  .dropdown .dropdown-menu {
+    -webkit-transform: translateX(110px);
+            transform: translateX(110px);
+  }
   .boo-nav-collapsed .boo-nav-toggle {
     -webkit-transform: translate(10px, 8px);
             transform: translate(10px, 8px);
@@ -2378,60 +2491,60 @@ h4 {
   #mask {
     width: 100%;
   }
-  .model {
+  .model, .model2 {
     width: 320px;
     position: absolute;
   }
-  .model .close img {
+  .model .close img, .model2 .close img {
     -webkit-transform: translate(290px, 35px);
             transform: translate(290px, 35px);
   }
-  .model_heder {
+  .model_heder, .model2_heder {
     height: 70px;
   }
-  .model_heder-text {
+  .model_heder-text, .model2_heder-text {
     padding: 20px;
     font-size: 20px;
   }
-  .model_type {
+  .model_type, .model2_type {
     font-size: 20px;
     margin-bottom: 20px;
   }
-  .model_btn button {
+  .model_btn button, .model2_btn button {
     width: 100%;
     border-radius: 6px;
     margin-top: 20px;
   }
-  .model form {
+  .model form, .model2 form {
     margin-top: 10px;
   }
-  .model form input {
+  .model form input, .model2 form input {
     margin-top: 10px;
     height: 50px;
     padding: 10px;
   }
-  .model section {
+  .model section, .model2 section {
     display: none;
     padding-top: 20px;
     padding: 20px;
   }
-  .model input {
+  .model input, .model2 input {
     display: none;
   }
-  .model label {
+  .model label, .model2 label {
     display: inline-block;
     margin: 0 0 -1px;
     padding: 10px;
     font-size: 14px;
   }
-  .model .chB {
+  .model .chB, .model2 .chB {
     text-align: left;
     margin-top: 20px;
   }
-  .model .chB input[type="checkbox"] {
+  .model .chB input[type="checkbox"], .model2 .chB input[type="checkbox"] {
     display: none;
   }
-  .model .chB label::before {
+  .model .chB label::before, .model2 .chB label::before {
     content: " ";
     display: inline-block;
     width: 20px;
@@ -2442,34 +2555,46 @@ h4 {
     margin-left: -10px;
     margin-right: 10px;
   }
-  .model .model_check {
+  .model .model_check, .model2 .model_check {
     font-size: 14px;
     text-align: left;
   }
-  .model .model_special {
+  .model .model_special, .model2 .model_special {
     text-align: left;
     margin-top: 20px;
     display: block;
   }
-  .model .model_special-cadr {
+  .model .model_special-cadr, .model2 .model_special-cadr {
     padding: 5px;
     border-radius: 4px;
     font-size: 14px;
   }
-  .model .model_special-cadr button {
+  .model .model_special-cadr button, .model2 .model_special-cadr button {
     border-radius: 20px;
     padding: 2px 7px;
     font-size: 12px;
     margin-bottom: 20px;
   }
-  .model .model_check-i {
+  .model .model_check-i, .model2 .model_check-i {
     display: inline-block;
+  }
+  .model2 form {
+    margin-top: 0;
+  }
+  .model2 .model_type {
+    margin-bottom: 0;
+  }
+  .model2_section {
+    padding-top: 0;
   }
   .model_socal-text {
     font-size: 18px;
   }
   .model_socal-icon {
     margin-top: 10px;
+  }
+  .head_sort .select-wrapper .select-rating, .head_sort .select-wrapper .select-reviews {
+    margin-right: 0px;
   }
   .main {
     background: url(../image/Mobile/main_img.png);
@@ -2478,11 +2603,9 @@ h4 {
   }
   .main form.catalin input::-webkit-input-placeholder {
     padding: 0px;
-    width: 100%;
   }
   .main input[type="text"] {
-    padding: 24px;
-    font-family: "Proxima Nova Regular", sans-serif;
+    padding: 20px;
   }
   .main h1 {
     margin-top: 50px;
@@ -2750,9 +2873,9 @@ h4 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -2765,6 +2888,7 @@ h4 {
     font-size: 20px;
   }
   .lawyers_phone .phone button {
+    margin-left: 5px;
     font-size: 17px;
     color: #10A578;
     font-family: "Proxima Nova Semibold", sans-serif;
@@ -2807,10 +2931,18 @@ h4 {
   .services_block {
     padding: 0;
   }
+  .services_block button {
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    font-family: "Proxima Nova Regular", sans-serif;
+    padding: 0;
+  }
   .services_block .all {
     display: block;
     color: #10A578;
     margin-bottom: 15px;
+    cursor: pointer;
   }
   .services .serv {
     margin-bottom: 36px;
@@ -3126,7 +3258,7 @@ h4 {
     padding: 0;
   }
   .factodes_block {
-    padding: 60px;
+    padding: 30px;
   }
   .special {
     margin: 0 20px;
@@ -3160,6 +3292,9 @@ h4 {
 }
 
 @media (max-width: 575px) {
+  .main {
+    padding-top: 0;
+  }
   .form {
     padding: 0 20px;
   }

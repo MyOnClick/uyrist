@@ -9,113 +9,88 @@
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/bootstrap-grid.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-	<title>Uyrist.kz</title>
+	<title>Yurist.kz</title>
 </head>
-
-<body>
-	<!-- Навигация -->
-<div class="boo-navbar">
-	<div class="container">
-		<!-- Mobile -->
-		<div class="boo-nav-collapsed">
-			<a href="index.html">
-				<img class="mobile-logo" src="image/Main/image 1.svg" alt="Logo" />
-			</a>
-			<button class="boo-nav-toggle">
-				<!-- <i class="fa fa-fw fa-bars"></i> -->
-				<div class="content">
-					<div class="hamburger">
-						<span></span>
-						<span></span>
-						<span></span>
-						<span></span>
-					</div>
+	<body>
+		<div class="boo-navbar">
+			<div class="container">
+				<!-- Mobile -->
+				<div class="boo-nav-collapsed">
+					<a href="index.html">
+						<img class="mobile-logo" src="image/Main/image 1.svg" alt="Logo" />
+					</a>
+					<button class="boo-nav-toggle">
+						<!-- <i class="fa fa-fw fa-bars"></i> -->
+						<div class="content">
+							<div class="hamburger">
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+						</div>
+					</button>
 				</div>
-			</button>
-		</div>
-		<!-- Brand -->
-		<div class="boo-nav-brand">
-			<a href="index.html">
-				<img src="image/Main/image 1.svg" alt="Logo" />
-			</a>
-		</div>
-		<div class="dropdown">
-			<div class="select">
-				<span class="boo-nav-city ">Нур-Султан (Астана)<img src="image/Main/Icon.svg" alt="Стрелка"></span>
+				<!-- Brand -->
+				<div class="boo-nav-brand">
+					<a href="index.html">
+						<img src="image/Main/image 1.svg" alt="Logo" />
+					</a>
+				</div>
+				<div class="dropdown">
+					<div class="select">
+						<span class="boo-nav-city ">Нур-Султан (Астана)<img src="image/Main/Icon.svg" alt="Стрелка"></span>
+					</div>
+					<input type="hidden" name="gender">
+					<ul class="dropdown-menu">
+						<li id="male"><span class="boo-nav-city ">Нур-Султан (Астана)<img src="image/Main/Icon.svg"
+									alt="Стрелка"></span></li>
+						<li id="female"><span class="boo-nav-city ">Нур-Султан (Астана)<img src="image/Main/Icon.svg"
+									alt="Стрелка"></span></li>
+					</ul>
+				</div>
+				<!-- Nav items -->
+				<div class="boo-nav-collapse">
+					<ul class="boo-nav-items">
+						<li><a href="yurists.html">Специалисты</a></li>
+						<li><a href="Compani.html">Юридические компании</a></li>
+						<li><a href="#">Нотариусы</a></li>
+						<li><a href="#">Полезное</a></li>
+						<li><span class="nav_btn btn_stroke model_link2">Вход</span></li>
+						<li><span class="nav_btn btn_fill model_link">Регистрация</span></li>
+
+					</ul>
+				</div>
 			</div>
-			<input type="hidden" name="gender">
-			<ul class="dropdown-menu">
-				<li id="male"><span class="boo-nav-city ">Нур-Султан (Астана)<img src="image/Main/Icon.svg"
-							alt="Стрелка"></span></li>
-				<li id="female"><span class="boo-nav-city ">Нур-Султан (Астана)<img src="image/Main/Icon.svg"
-							alt="Стрелка"></span></li>
-			</ul>
 		</div>
-		<!-- Nav items -->
-		<div class="boo-nav-collapse">
-			<ul class="boo-nav-items">
-				<li><a href="yurists.html">Специалисты</a></li>
-				<li><a href="Compani.html">Юридическиекомпании</a></li>
-				<li><a href="yurist.html">Нотариусы</a></li>
-				<li><a href="Compan.html">Полезное</a></li>
-				<li><span class="nav_btn btn_stroke">Вход</span></li>
-				<li><span class="nav_btn btn_fill model_link">Регистрация</span></li>
-
-			</ul>
 		</div>
-	</div>
-</div>
-</div>
-<div id="mask"></div>
-
-<div class="model">
-	<!-- The popup -->
-	<span class="close"><img src="image/Mobile/close.svg" alt="Close"></span>
-	<div class="constraint">
-		<!-- Popup content -->
-		<div class="model_heder">
-			<div class="model_heder-text">Регистрация</div>
-		</div>
-		<div class="model_type">Выберите тип учетной записи</div>
-		<main>
-			<input id="tab1" type="radio" name="tabs" checked>
-			<label class="model_content-title" for="tab1">Физическое лицо</label>
-
-			<input id="tab2" type="radio" name="tabs">
-			<label class="model_content-title" for="tab2">Юрист/адвокат</label>
-
-			<input id="tab3" type="radio" name="tabs">
-			<label class="model_content-title" for="tab3">Юридическая компания</label>
-
-			<section id="content1">
-				<form action="#">
-					<div class="col-sm">
-						<input type="text" placeholder="Имя">
+		<div id="mask"></div>
+	<div class="model2">
+		<!-- The popup -->
+		<span class="close"><img src="image/Mobile/close.svg" alt="Close"></span>
+		<div class="constraint">
+			<!-- Popup content -->
+			<div class="model_heder">
+				<div class="model_heder-text">Вход</div>
+			</div>
+			<div class="model_type">Войдите в личный кабинет</div>
+			<div class="model2_section">
+				<form>
+					<div class="">
+						<label for=""></label>
+						<input class=model2_input type="email" placeholder="Имя">
 					</div>
-					<div class="col-sm">
-						<input type="email" placeholder="Эл почта">
-					</div>
-					<div class="col-sm">
-						<input type="password" placeholder="Пароль">
-					</div>
-					<div class="col-sm">
-						<input type="password" placeholder="Повторите пароль">
+					<div class="">
+						<label for=""></label>
+						<input class=model2_input type="password" placeholder="Эл почта">
 					</div>
 				</form>
-
-
-				<div class="chB">
-					<input class="model_check-i" type="checkbox" id="check">
-					<label for="check" class="model_check">Даю согласие на обработку персональных данных</label>
-				</div>
-
-				<div class="model_btn">
-					<button>Зарегистрироваться</button>
+				<div class="model2_btn">
+					<button>Войти</button>
 				</div>
 				<div class="model_socal">
 					<div class="col-sm">
-						<div class="model_socal-text">Регистрация через соцсети</div>
+						<div class="model_socal-text">Вход через соцсети</div>
 					</div>
 					<div class="col-sm">
 						<div class="model_socal-icon">
@@ -125,102 +100,165 @@
 						</div>
 					</div>
 				</div>
-			</section>
-			<section id="content2">
-				<form action="#">
-					<div class="col-sm">
-						<input type="text" placeholder="Фамилия">
-					</div>
-					<div class="col-sm">
-						<input type="text" placeholder="Имя">
-					</div>
-					<div class="col-sm">
-						<input type="text" placeholder="Отчество">
-					</div>
-					<div class="col-sm">
-						<input type="phone" placeholder="Телефон">
-					</div>
-					<div class="col-sm">
-						<input type="email" placeholder="Эл. почта">
-					</div>
-					<div class="col-sm">
-						<input type="text" placeholder="Нур-Султан(Астана)">
-					</div>
-					<div class="col-sm">
-						<input type="text" placeholder="Специализация">
-					</div>
-					<div class="col-sm">
-						<div class="model_special">
-							<span class="model_special-cadr">
-								Уголовное право <button>Удалить</button>
-							</span>
-							<span class="model_special-cadr">
-								Административное право <button>Удалить</button>
-							</span>
-						</div>
-					</div>
-					<div class="col-sm">
-						<input type="password" placeholder="Пароль">
-					</div>
-					<div class="col-sm">
-						<input type="password" placeholder="Повторите пароль">
-					</div>
-				</form>
-				<div class="chB">
-					<input class="model_check-i" type="checkbox" id="check">
-					<label for="check" class="model_check">Даю согласие на обработку персональных данных</label>
-				</div>
-				<div class="model_btn">
-					<button>Зарегистрироваться</button>
-				</div>
-				</p>
-			</section>
-			<section id="content3">
-				<form action="#">
-					<div class="col-sm">
-						<input type="text" placeholder="Название компании">
-					</div>
-					<div class="col-sm">
-						<input type="phone" placeholder="Телефон">
-					</div>
-					<div class="col-sm">
-						<input type="email" placeholder="Эл. почта">
-					</div>
-					<div class="col-sm">
-						<input type="text" placeholder="Нур-Султан(Астана)">
-					</div>
-					<div class="col-sm">
-						<input type="text" placeholder="Специализация">
-					</div>
-					<div class="col-sm">
-						<div class="model_special">
-							<span class="model_special-cadr">
-								Уголовное право <button>Удалить</button>
-							</span>
-							<span class="model_special-cadr">
-								Административное право <button>Удалить</button>
-							</span>
-						</div>
-					</div>
-					<div class="col-sm">
-						<input type="password" placeholder="Пароль">
-					</div>
-					<div class="col-sm">
-						<input type="password" placeholder="Повторите пароль">
-					</div>
-				</form>
-				<div class="chB">
-					<input class="model_check-i" type="checkbox" id="check">
-					<label for="check" class="model_check">Даю согласие на обработку персональных данных</label>
-				</div>
-				<div class="model_btn">
-					<button>Зарегистрироваться</button>
-				</div>
-
+			</div>
+	
+		</div>
 	</div>
-</div>
-	<!--Личный кабинет -->
-<div class="profile">
+		<div class="model">
+			<!-- The popup -->
+			<span class="close"><img src="image/Mobile/close.svg" alt="Close"></span>
+			<div class="constraint">
+				<!-- Popup content -->
+				<div class="model_heder">
+					<div class="model_heder-text">Регистрация</div>
+				</div>
+				<div class="model_type">Выберите тип учетной записи</div>
+				<main>
+					<input id="tab1" type="radio" name="tabs" checked>
+					<label class="model_content-title" for="tab1">Физическое лицо</label>
+
+					<input id="tab2" type="radio" name="tabs">
+					<label class="model_content-title" for="tab2">Юрист/адвокат</label>
+
+					<input id="tab3" type="radio" name="tabs">
+					<label class="model_content-title" for="tab3">Юридическая компания</label>
+
+					<section id="content1">
+						<form action="#">
+							<div class="col-sm">
+								<input type="text" placeholder="Имя">
+							</div>
+							<div class="col-sm">
+								<input type="email" placeholder="Эл почта">
+							</div>
+							<div class="col-sm">
+								<input type="password" placeholder="Пароль">
+							</div>
+							<div class="col-sm">
+								<input type="password" placeholder="Повторите пароль">
+							</div>
+						</form>
+
+
+						<div class="chB">
+							<input class="model_check-i" type="checkbox" id="check">
+							<label for="check" class="model_check">Даю согласие на обработку персональных данных</label>
+						</div>
+
+						<div class="model_btn">
+							<button>Зарегистрироваться</button>
+						</div>
+						<div class="model_socal">
+							<div class="col-sm">
+								<div class="model_socal-text">Регистрация через соцсети</div>
+							</div>
+							<div class="col-sm">
+								<div class="model_socal-icon">
+									<a href="#"><img src="image/Modal/Icon_google.svg" alt="Icon"></a>
+									<a href="#"><img src="image/Modal/Icon_fb.svg" alt="Icon"></a>
+									<a href="#"><img src="image/Modal/Icon_vk.svg" alt="Icon"></a>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section id="content2">
+						<form action="#">
+							<div class="col-sm">
+								<input type="text" placeholder="Фамилия">
+							</div>
+							<div class="col-sm">
+								<input type="text" placeholder="Имя">
+							</div>
+							<div class="col-sm">
+								<input type="text" placeholder="Отчество">
+							</div>
+							<div class="col-sm">
+								<input type="phone" placeholder="Телефон">
+							</div>
+							<div class="col-sm">
+								<input type="email" placeholder="Эл. почта">
+							</div>
+							<div class="col-sm">
+								<input type="text" placeholder="Нур-Султан(Астана)">
+							</div>
+							<div class="col-sm">
+								<input type="text" placeholder="Специализация">
+							</div>
+							<div class="col-sm">
+								<div class="model_special">
+									<span class="model_special-cadr">
+										Уголовное право <button>Удалить</button>
+									</span>
+									<span class="model_special-cadr">
+										Административное право <button>Удалить</button>
+									</span>
+								</div>
+							</div>
+							<div class="col-sm">
+								<input type="password" placeholder="Пароль">
+							</div>
+							<div class="col-sm">
+								<input type="password" placeholder="Повторите пароль">
+							</div>
+						</form>
+						<div class="chB">
+							<input class="model_check-i" type="checkbox" id="check">
+							<label for="check" class="model_check">Даю согласие на обработку персональных данных</label>
+						</div>
+						<div class="model_btn">
+							<button>Зарегистрироваться</button>
+						</div>
+						</p>
+					</section>
+					<section id="content3">
+						<form action="#">
+							<div class="col-sm">
+								<input type="text" placeholder="Название компании">
+							</div>
+							<div class="col-sm">
+								<input type="phone" placeholder="Телефон">
+							</div>
+							<div class="col-sm">
+								<input type="email" placeholder="Эл. почта">
+							</div>
+							<div class="col-sm">
+								<input type="text" placeholder="Нур-Султан(Астана)">
+							</div>
+							<div class="col-sm">
+								<input type="text" placeholder="Специализация">
+							</div>
+							<div class="col-sm">
+								<div class="model_special">
+									<span class="model_special-cadr">
+										Уголовное право <button>Удалить</button>
+									</span>
+									<span class="model_special-cadr">
+										Административное право <button>Удалить</button>
+									</span>
+								</div>
+							</div>
+							<div class="col-sm">
+								<input type="password" placeholder="Пароль">
+							</div>
+							<div class="col-sm">
+								<input type="password" placeholder="Повторите пароль">
+							</div>
+						</form>
+						<div class="chB">
+							<input class="model_check-i" type="checkbox" id="check">
+							<label for="check" class="model_check">Даю согласие на обработку персональных данных</label>
+						</div>
+						<div class="model_btn">
+							<button>Зарегистрироваться</button>
+						</div>
+
+			</div>
+		</div>
+		</div> <!-- /Popup content -->
+		</div> <!-- /The popup -->
+		</div>
+
+<div class="profile_heder">
 	<div class="title">
 		<div class="container">
 			<div class="head">
@@ -229,184 +267,51 @@
 						<a href="index.html">Главная</a>
 						<span class="head_img"><img src="image/2. Main/Arrows1.svg" alt="Стрелка"></span>
 						<span class="head_special">Личный кабинет</span></div>
-					<div class="lawyer">
-						<div class="container">
-							<div class="row lawyer">
-	
-								<div class="col-2 lawyer_block-photo ">
-									<img src="image/3. Yurist/2.png" alt="Фото" class="photo">
-									<div class="redacted"><button>Изменить фото</button></div>
-	
-								</div>
-								<div class="col-7 lawyer_block-ingo block">
-									<div class="name"><a href="yurist.html">Муканов Мурат Муканович</a>
-										<div>
-										<span><img src="image/Lawyers/icon/Icon_star.svg" alt="Star"></span>
-										<span><img src="image/Lawyers/icon/Icon_star.svg" alt="Star"></span>
-										<span><img src="image/Lawyers/icon/Icon_star.svg" alt="Star"></span>
-										<span><img src="image/Lawyers/icon/Icon_star.svg" alt="Star"></span>
-										<span><img src="image/Lawyers/icon/Icon_star.svg" alt="Star"></span>
-										<small>5.0</small>
-										<span><img class="block-span" src="image/Lawyers/icon/Vector.svg" alt="Icon"></span>
-										<small class="rewyes_text">12 отзывов</small>
-										</div>
-									</div>
-									<div class="row">
-										<div class="col-sm-11 uslugi">
-											<span class="spec">Уголовное право</span>
-											<span class="spec">Земельное право</span>
-											<span class="spec">Семейное право</span>
-											<span class="spec">Арбитраж</span>
-											<span class="spec">Корпоративное право</span>
-											<span class="spec">Алименты</span>
-											<span class="spec">Наследство</span>
-											<span class=""></span>
-											<span class=""></span>
-											<span class=""></span>
-											<span class=""></span>
-											<div class="profile_btn"><button class="">Редактировать специализацию</button></div>
-										</div>
-									</div>
-								</div>
-							</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+	<div class="profile">
+		<div class="container">
+			<div class="row profile_block">
+				<div class="col-md-2 profile_photo">
+					<img src="image/Lawyers/Rectangle 26.png" alt="photo">
+					<div class="changePhoto"><button>Изменить фото</button></div>
+				</div>
+				<div class="col-md ">
+					<div class="profile_name">Муканов Мурат Муканович</div>
+					<div class="w-100"></div>
+					<span class="profile_stars">
+						<img src="image/Lawyers/icon/Icon_star.svg" alt="star">
+						<img src="image/Lawyers/icon/Icon_star.svg" alt="star">
+						<img src="image/Lawyers/icon/Icon_star.svg" alt="star">
+						<img src="image/Lawyers/icon/Icon_star.svg" alt="star">
+						<img src="image/Lawyers/icon/Icon_star.svg" alt="star">
+						<span>5.0</span>
+					</span>
+					<span class="profile_review">
+						<img src="image/Lawyers/icon/Vector.svg" alt="icon">
+						<span>12 отзывов</span>
+					</span>
+					<div class="col-md-8 profile_spec">
+						<span>Уголовное право</span>
+						<span>Земельное право</span>
+						<span>Семейное право</span>
+						<span>Арбитраж</span>
+						<span>Корпоративное право</span>
+						<span>Алименты</span>
+						<span>Наследство</span>
+						<div class="profile_btn">
+							<button>Редактировать специализацию</button>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-<!-- формы -->
-
-<div class="container">
-	<main>
-	
-		<input id="tab1" type="radio" name="tabs" checked>
-		<label for="tab1">Управление профилем</label>
-	
-		<input id="tab2" type="radio" name="tabs">
-		<label for="tab2">Статистика</label>
-	
-	
-		<section id="content1">
-			<div class="row hr">
-				<div class="col-sm">
-					<form>
-						<div class="profile_form">
-						<div class="col-sm-2"><span class="name">Телефон</span></div>
-						<div class="col-sm"><input type="input" placeholder="Германенко"></div>
-						</div>
-						<div class="profile_form">
-						<div class="col-sm-2"><span class="name">Имя</span></div>
-						<div class="col-sm"><input type="input" placeholder="Игорь"></div>
-
-						</div>
-						<div class="profile_form">
-						<div class="col-sm-2"><span class="name">Отчество</span></div>
-						<div class="col-sm"><input type="input" placeholder="Александрович"></div>
-							
-							
-						</div>
-					</form>
-					
-				</div>
-				
-				<div class="col-sm">
-					<form>
-						<div class="profile_form">
-							<div class="col-sm-2"><span class="name">Телефон</span></div>
-							<div class="col-sm"><input type="input" placeholder=""></div>
-						</div>
-						<div class="profile_form">
-							<div class="col-sm-2"><span class="name">E-mail</span></div>
-							<div class="col-sm"><input type="input" placeholder=""></div>
-					
-						</div>
-						<div class="profile_form">
-							<div class="col-sm-2"><span class="name">Город </span></div>
-							<div class="col-sm"><input type="input" placeholder="Нур Султан"></div>
-					
-					
-						</div>
-					</form>
-				</div>
-			</div>
-				<div class="row hr">
-							<div class="col-sm">
-								<form>
-									<div class="profile_form">
-										<div class="col-sm-2"><span class="name">Адрес</span></div>
-										<div class="col-sm"><input type="input" placeholder=""></div>
-									</div>
-									<div class="profile_form">
-										<div class="col-sm-2"><span class="name">График работы</span></div>
-										<div class="col-sm"><input type="input" placeholder=""></div>
-									</div>
-								</form>
-						
-							</div>
-						
-							<div class="col-sm">
-								<form>
-									<div class="profile_form">
-										<div class="col-sm-2"><span class="name">Образование</span></div>
-										<div class="col-sm"><input type="input" placeholder="Германенко"></div>
-									</div>
-									<div class="profile_form">
-										<div class="col-sm-2"><span class="name">Стаж</span></div>
-										<div class="col-sm"><input type="input" placeholder="5 лет"></div>
-						
-									</div>
-								</form>
-							</div>
-			</div>
-							<div class="row hr">
-								<div class="col-sm">
-									<form>
-										<div class="profile_form">
-											<div class="col-sm-2"><span class="name">Опыт работы</span></div>
-											<div class="col-sm"><input type="input" placeholder="Должность"></div>
-										</div>
-										<div class="profile_form">
-											<div class="col-sm-2"><span class="name"></span></div>
-											<div class="col-sm"><input type="input" placeholder="Стаж"></div>
-										</div>
-									</form>
-									<div class="col-sm offset-3">
-										<div class="form_btn">
-											<img src="image/Profile/plus.svg" alt="icon">
-											<button>Добавить место работы</button>
-										</div>
-									</div>
-							
-								</div>
-							
-								<div class="col-sm">
-									<form>
-										<div class="profile_form">
-											<div class="col-sm-2"><span class="name">О себе</span></div>
-				
-											<div class="col-sm"><textarea name="text"></textarea></div>
-										</div>
-									</form>
-								</div>
-							</div>
-							<div class="profile-section_btn">
-								<button>Сохранить изменения</button>
-							</div>
-		</section>
-
-		<section id="content2">
-vvvvvv
-		</section>
-	
-	
-	</main>
-
-</div>
-</div>
-
-
-<footer class="footer">
+<!-- <footer class="footer">
 	<div class="container">
 		<div class="row footer_blocks">
 			<div class="footer_special footer_logo"><img src="image/Footer/Logo.svg" alt="Лого"></div>
@@ -451,9 +356,10 @@ vvvvvv
 		</div>
 	</div>
 
-</footer>
-	<script src="js/jquery-3.4.0.min.js"></script>
+</footer> -->
+		<script src="js/jquery-3.4.0.min.js"></script>
 		<script src="js/script.js"></script>
-		</body>
-		
-		</html>
+
+	</body>
+
+</html>
